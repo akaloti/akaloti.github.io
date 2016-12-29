@@ -2,10 +2,6 @@ Next
 ----
 
 -Angular
-	-confirm that switching around Angular templates works
-		-implementing templates
-			-means to switch
-				-create (responsive) navigation bar
 	-see if can include projects.html in home.html and also
 	use it as a standalone webpage
 	-move templates into their own files (see sample
@@ -14,6 +10,13 @@ Next
 -start readme
 	-mention the goal of a responsive webpage
 -what next?
+
+
+Eventually
+----------
+
+-somewhere on the webpage, mention that no personal website-frameworks
+were used. Just Bootstrap, Angular, etc.
 
 
 
