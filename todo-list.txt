@@ -1,0 +1,23 @@
+Next
+----
+
+-Angular
+	-confirm that switching around Angular templates works
+		-create (responsive) navigation bar
+	-see if can include projects.html in home.html and also
+	use it as a standalone webpage
+-start readme
+	-mention the goal of a responsive webpage
+-what next?
+
+
+
+Webpage Angular Templates
+-------------------------
+
+-home.html
+-education.html
+-projects.html?
+-leadership.html
+-work.html
+-development-process.html
