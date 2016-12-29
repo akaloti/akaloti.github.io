@@ -5,7 +5,7 @@ Next
 	-confirm that switching around Angular templates works
 		-implementing templates
 			-means to switch
-		-create (responsive) navigation bar
+				-create (responsive) navigation bar
 	-see if can include projects.html in home.html and also
 	use it as a standalone webpage
 	-move templates into their own files (see sample
