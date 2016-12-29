@@ -1,15 +1,47 @@
 <html>
 <head>
 
-<title>Aaron Kaloti's Webpage</title>
+	<title>Aaron Kaloti's Webpage</title>
+
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.10/angular.min.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.10/angular-ui-router.js"></script>
+	<script src="javascripts/app.js"></script>
 
 </head>
-<body>
+<body ng-app="personalWebpage">
 
-<p>Greetings! This is Aaron Kaloti's currently unfinished webpage.
-He hopes to have it finished by the end of December.
-Ideally without the use of any web design frameworks (though
-libraries such as jQuery and Bootstrap are fair game).</p>
+	<!--
+	<p>Greetings! This is Aaron Kaloti's currently unfinished webpage.
+	He hopes to have it finished by the end of December.
+	Ideally without the use of any web design frameworks (though
+	libraries such as jQuery and Bootstrap are fair game).</p>
+	-->
+
+	<ui-view></ui-view>
+
+	<script type="text/ng-template" id="/home.html">
+		<p>home.html</p>
+	</script> <!-- template: home.html -->
+
+	<script type="text/ng-template" id="/education.html">
+		<p>education.html</p>
+	</script> <!-- template: education.html -->
+
+	<script type="text/ng-template" id="/projects.html">
+		<p>projects.html</p>
+	</script> <!-- template: projects.html -->
+
+	<script type="text/ng-template" id="/leadership.html">
+		<p>leadership.html</p>
+	</script> <!-- template: leadership.html -->
+
+	<script type="text/ng-template" id="/work.html">
+		<p>work.html</p>
+	</script> <!-- template: work.html -->
+
+	<script type="text/ng-template" id="/development-process.html">
+		<p>development-process.html</p>
+	</script> <!-- template: development-process.html -->
 
 </body>
 </html>

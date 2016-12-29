@@ -3,9 +3,14 @@ Next
 
 -Angular
 	-confirm that switching around Angular templates works
+		-implementing templates
+			-means to switch
 		-create (responsive) navigation bar
 	-see if can include projects.html in home.html and also
 	use it as a standalone webpage
+	-move templates into their own files (see sample
+	"MEAN Web Development" code for more on how to do this)
+	-figure out how to split app.js up too
 -start readme
 	-mention the goal of a responsive webpage
 -what next?
@@ -21,3 +26,8 @@ Webpage Angular Templates
 -leadership.html
 -work.html
 -development-process.html
+	-ideas on what to mention:
+		-test-driven development
+		-Git
+		-todo list
+		-small shell scripts
