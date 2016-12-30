@@ -2,12 +2,14 @@ Next
 ----
 
 -Angular
-	-should I use "ng" or "data-ng"?
-	-move templates into their own files (see sample
-	"MEAN Web Development" code for more on how to do this)
-	-figure out how to split app.js up too
--start readme
-	-mention the goal of a responsive webpage
+	-split files up
+		-index.html
+			-navigation bar
+			-move templates into their own files (see sample
+			"MEAN Web Development" code for more on how to do this)
+		-figure out how to split app.js up too
+	-start readme
+		-mention the goal of a responsive webpage
 -what next?
 
 
