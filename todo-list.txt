@@ -2,12 +2,18 @@ Next
 ----
 
 -main page (minus project previews)
-	-first panel
-		-picture and name
-		-tagline
-		-links
-	-second panel
-		-link to my development process page
+	-at first just add the panels contents
+		-first panel
+			-*picture and name
+			-tagline
+			-links
+		-second panel
+			-link to my development process page
+	-properly format the panels
+		-first panel
+			-*split into three panels
+			-have the three panels be on one row
+	-make proper content (don't just use placeholders to put it off)
 -projects preview page
 	-each project preview should have its own panel
 	-mention that a preview can be clicked for more details
@@ -27,6 +33,7 @@ List of Other, Non-Extraneous Tasks (in no particular order)
 Eventually (relatively extraneous tasks)
 -----------------------------
 
+-get a better picture of myself :-)
 -somewhere on the webpage, mention that no personal website-frameworks
 were used. Just Bootstrap, Angular, etc.
 -improve navigation bar

@@ -24,6 +24,7 @@
 
 </head>
 <body data-ng-app="personalWebpage" data-ng-cloak>
+<div class="container">
 
 	<!--
 	<p>Greetings! This is Aaron Kaloti's currently unfinished webpage.
@@ -49,7 +50,34 @@
 	<ui-view></ui-view>
 
 	<script type="text/ng-template" id="/home.html">
-		<p>home.html</p>
+		<!-- <p>home.html</p> -->
+
+		<div class="panel panel-default">
+			<div class="panel-body">
+				<div class="panel panel-default">
+					<div class="panel-body">
+						<img src="images/aaron-kaloti.JPG"
+							class="img-circle img-responsive"
+							alt="Picture of Aaron Kaloti"
+							height="100" width="100" /><br />
+						<b>Aaron Kaloti</b><br />
+					</div>
+				</div>
+
+				<div class="panel panel-default">
+					<div class="panel-body">
+						<p>Tagline</p>
+					</div>
+				</div>
+
+				<div class="panel panel-default">
+					<div class="panel-body">
+						<p>Links</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
 		<iframe src="projects-preview-template.html"></iframe>
 	</script> <!-- template: home.html -->
 
@@ -73,5 +101,6 @@
 		<p>development-process.html</p>
 	</script> <!-- template: development-process.html -->
 
+</div>
 </body>
 </html>
