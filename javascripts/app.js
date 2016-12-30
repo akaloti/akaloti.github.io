@@ -1,3 +1,5 @@
+"use strict";
+
 var app = angular.module('personalWebpage', ['ui.router']);
 
 app.config([

@@ -4,6 +4,8 @@ Next
 -Angular
 	-see if can include projects.html in home.html and also
 	use it as a standalone webpage
+		-just use a variable that sets up the projects page
+		if its set to true
 	-move templates into their own files (see sample
 	"MEAN Web Development" code for more on how to do this)
 	-figure out how to split app.js up too
@@ -17,7 +19,12 @@ Eventually
 
 -somewhere on the webpage, mention that no personal website-frameworks
 were used. Just Bootstrap, Angular, etc.
-
+-improve navigation bar
+	-make it look better? (it's too wide)
+	-make a link (not the brand name) to the home page; remove the link
+	that the brand name has
+	-emphasize which navbar link is the current page (this one seems trickier
+	than simple Bootstrap)
 
 
 Webpage Angular Templates
