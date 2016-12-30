@@ -1,15 +1,20 @@
 Next
 ----
 
--Angular
-	-confirm that switching around Angular templates works
-		-create (responsive) navigation bar
-	-see if can include projects.html in home.html and also
-	use it as a standalone webpage
--start readme
-	-mention the goal of a responsive webpage
 -what next?
 
+
+Eventually
+----------
+
+-somewhere on the webpage, mention that no personal website-frameworks
+were used. Just Bootstrap, Angular, etc.
+-improve navigation bar
+	-make it look better? (it's too wide)
+	-make a link (not the brand name) to the home page; remove the link
+	that the brand name has
+	-emphasize which navbar link is the current page (this one seems trickier
+	than simple Bootstrap)
 
 
 Webpage Angular Templates
@@ -21,3 +26,8 @@ Webpage Angular Templates
 -leadership.html
 -work.html
 -development-process.html
+	-ideas on what to mention:
+		-test-driven development
+		-Git
+		-todo list
+		-small shell scripts
