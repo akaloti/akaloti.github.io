@@ -13,6 +13,7 @@ Next
 		-first panel
 			-*split into three panels
 			-have the three panels be on one row
+				-put gaps between the panels when they're on one row
 	-make proper content (don't just use placeholders to put it off)
 -projects preview page
 	-each project preview should have its own panel
