@@ -2,10 +2,7 @@ Next
 ----
 
 -Angular
-	-see if can include projects.html in home.html and also
-	use it as a standalone webpage
-		-just use a variable that sets up the projects page
-		if its set to true
+	-should I use "ng" or "data-ng"?
 	-move templates into their own files (see sample
 	"MEAN Web Development" code for more on how to do this)
 	-figure out how to split app.js up too
