@@ -1,11 +1,31 @@
 Next
 ----
 
--what next?
+-main page (minus project previews)
+	-first panel
+		-picture and name
+		-tagline
+		-links
+	-second panel
+		-link to my development process page
+-projects preview page
+	-each project preview should have its own panel
+	-mention that a preview can be clicked for more details
+	-contents of each project preview
+		-tba (see resume for ideas)
 
 
-Eventually
-----------
+List of Other, Non-Extraneous Tasks (in no particular order)
+--------------------------------------
+
+-education page
+	-mention
+		-current college, degree, etc. (see resume for good ideas)
+-etc. (other pages)
+
+
+Eventually (relatively extraneous tasks)
+-----------------------------
 
 -somewhere on the webpage, mention that no personal website-frameworks
 were used. Just Bootstrap, Angular, etc.
