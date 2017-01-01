@@ -2,3 +2,11 @@
 	overflow: scroll;
 	height: 200px;
 }
+
+.centered-element {
+    margin: auto;
+}
+
+.centered-text {
+	text-align: center;
+}
