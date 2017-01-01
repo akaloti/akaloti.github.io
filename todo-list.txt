@@ -1,17 +1,11 @@
 Next
 ----
 
--main page (minus project previews)
-	-first panel
-		-picture and name
-		-tagline
-		-links
-	-second panel
-		-link to my development process page
 -projects preview page
 	-each project preview should have its own panel
 	-mention that a preview can be clicked for more details
 	-contents of each project preview
+		-have option to view bunch of images of a project
 		-tba (see resume for ideas)
 
 
@@ -21,12 +15,17 @@ List of Other, Non-Extraneous Tasks (in no particular order)
 -education page
 	-mention
 		-current college, degree, etc. (see resume for good ideas)
+-lingering concerns
+	-on main page, first subpanel's contents aren't centered
+-replace the resume link with a real one
+-use Google custom fonts
 -etc. (other pages)
 
 
-Eventually (relatively extraneous tasks)
+Relatively extraneous tasks
 -----------------------------
 
+-get a better picture of myself :-)
 -somewhere on the webpage, mention that no personal website-frameworks
 were used. Just Bootstrap, Angular, etc.
 -improve navigation bar
@@ -35,6 +34,7 @@ were used. Just Bootstrap, Angular, etc.
 	that the brand name has
 	-emphasize which navbar link is the current page (this one seems trickier
 	than simple Bootstrap)
+-perhaps find a screen reader to use for testing personal webpage
 
 
 Webpage Angular Templates
@@ -51,3 +51,4 @@ Webpage Angular Templates
 		-Git
 		-todo list
 		-small shell scripts
+-page for noteworthy courses taken

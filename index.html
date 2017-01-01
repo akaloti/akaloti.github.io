@@ -24,6 +24,7 @@
 
 </head>
 <body data-ng-app="personalWebpage" data-ng-cloak>
+<div class="container">
 
 	<!--
 	<p>Greetings! This is Aaron Kaloti's currently unfinished webpage.
@@ -49,8 +50,77 @@
 	<ui-view></ui-view>
 
 	<script type="text/ng-template" id="/home.html">
-		<p>home.html</p>
-		<iframe src="projects-preview-template.html"></iframe>
+		<!-- <p>home.html</p> -->
+
+		<div class="panel panel-default">
+			<div class="panel-body">
+			
+				<!-- This panel has subpanels using the grid system -->
+				<div class="row">
+
+					<!-- Picture and name panel -->
+					<div class="col-sm-2 col-sm-offset-1
+						panel panel-default">
+						<div class="panel-body">
+							<img src="images/aaron-kaloti.JPG"
+								class="img-circle img-responsive"
+								alt="Picture of Aaron Kaloti"
+								height="100" width="100" /><br />
+							<b>Aaron Kaloti</b><br />
+						</div>
+					</div>
+
+					<!-- Tagline panel -->
+					<div class="col-sm-3 col-sm-offset-1
+						panel panel-default">
+						<div class="panel-body">
+							<p>Second-year Computer Science and Engineering student at UC Davis.
+								Seeking summer internship.</p>
+						</div>
+					</div>
+
+					<!-- Links panel -->
+					<div class="col-sm-3 col-sm-offset-1
+						panel panel-default">
+						<div class="panel-body">
+							<p>Links</p>
+							<div class="list-group">
+								<a href="documents/junk.txt"
+									class="list-group-item">
+									Resume
+									(Last update: December 31, 2016)
+								</a>
+								<a href="https://github.com/aaronistheman"
+									class="list-group-item">
+									GitHub
+								</a>
+								<a href=https://www.linkedin.com/in/aaron-kaloti-943656107?trk=nav_responsive_tab_profile_pic"
+									class="list-group-item">
+									LinkedIn
+								</a>
+							</div>
+						</div>
+					</div>
+
+					<!-- To create left margin for above panel -->
+					<div class="col-sm-0 col-sm-offset-1">
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="panel panel-default">
+			<div class="panel-body">
+				For details of my solo development process,
+				please click <a href="#/development-process">here</a>.
+			</div>
+		</div>
+
+		<div class="panel panel-default">
+			<div class="panel-body">
+				<iframe src="projects-preview-template.html"></iframe>
+			</div>
+		</div>
 	</script> <!-- template: home.html -->
 
 	<script type="text/ng-template" id="/education.html">
@@ -73,5 +143,6 @@
 		<p>development-process.html</p>
 	</script> <!-- template: development-process.html -->
 
+</div>
 </body>
 </html>
