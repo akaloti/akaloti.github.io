@@ -1,7 +1,6 @@
 Next (in particular order)
 ----
 
--add panel for Shift/Runs Interface Project
 -remove education page; my education is on my resume
 -somewhere on the webpage, mention that no personal website-frameworks
 were used. Just Bootstrap, Angular, etc.

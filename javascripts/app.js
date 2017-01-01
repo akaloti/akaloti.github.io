@@ -87,6 +87,7 @@ var NO_TEST_FRAMEWORK = "";
 var IS_BIG_PROJECT = "big-project"; // the CSS class indicating big project
 var IS_NOT_BIG_PROJECT = "";
 var NO_IMAGE_YET = new ImageData("images/no-image-yet.JPG", 696, 465);
+var NO_GITHUB_REPO = "";
 function getProjectPanelData()
 {
 	var projectPanelData = [];
@@ -129,6 +130,15 @@ function getProjectPanelData()
 		IS_BIG_PROJECT,
 		new ImageData("images/economics.png", 443, 317),
 		"https://github.com/aaronistheman/Supply-Demand-Graph-Calculations"));
+	projectPanelData.push(new ProjectPanelData(
+		"Shift/Runs Interface Project",
+		"April - May 2016",
+		"Python (back-end), JavaScript (front-end)",
+		"unittest (\"PyUnit\") and Django's extensions",
+		"Django, HTML/CSS, Git",
+		IS_NOT_BIG_PROJECT,
+		new ImageData("images/shift-project.JPG", 407, 354),
+		NO_GITHUB_REPO));
 	projectPanelData.push(new ProjectPanelData(
 		"2D Spacecraft Android Game (\"Outer Space Legion\")",
 		"December 2015 - April 2016",
@@ -212,6 +222,7 @@ app.controller('MainCtrl', [
 function($scope) {
 	$scope.projectPanelData = getProjectPanelData();
 	$scope.NO_TEST_FRAMEWORK = NO_TEST_FRAMEWORK;
+	$scope.NO_GITHUB_REPO = NO_GITHUB_REPO;
 }]);
 
 app.controller('EducationCtrl', [

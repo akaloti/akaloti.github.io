@@ -142,8 +142,9 @@
 							<h4><b>{{ ppd.name }}</b>,
 								{{ ppd.dateRangeStr }}</h4>
 
-							<span><b><a href="{{ ppd.githubLink }}">
-							GitHub Repository</a></b></span><br />
+							<span data-ng-if="ppd.githubLink != NO_GITHUB_REPO">
+								<b><a href="{{ ppd.githubLink }}">
+								GitHub Repository</a></b></span><br />
 
 							<span><b>Programming language(s):</b>
 							{{ ppd.programmingLanguagesStr }}</span><br />
