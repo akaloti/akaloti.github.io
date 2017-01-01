@@ -2,15 +2,17 @@ Next
 ----
 
 -projects preview panel
-	-ideas to make panels more interesting
-		-have noteworthy fact with some projects
-		-have noteworthy regret with some projects? (a "not-so-fun fact")
-		-have "biggest challenge" for some/all projects
 	-contents of each project preview
 		-*name
 		-*when I worked on it
 		-selected bulet points
 		-*link to GitHub repository
+		-include one image of the project
+			-in Angular data, need:
+				-image path
+				-image width
+				-image height
+		(
 		-a button saying "click to see images"
 			-images (x2?)
 				-clicking any image will show more images?
@@ -19,6 +21,7 @@ Next
 					in some sort of popup
 				-or can have gallery of three/four images at bottom
 				of each panel?
+		)
 -reorganize todo list
 
 
@@ -61,6 +64,10 @@ with more details about the project
 -add a navbar link to a page that lets user play/use some of my
 web applications (Game Show Fusion, maybe Simplified Economic Model
 if I make it more robust); if it's just game(s), can call it "Arcade"
+-ideas to make panels more interesting
+	-have noteworthy fact with some projects
+	-have noteworthy regret with some projects? (a "not-so-fun fact")
+	-have "biggest challenge" for some/all projects
 
 
 Webpage Angular Templates

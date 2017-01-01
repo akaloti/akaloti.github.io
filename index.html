@@ -136,21 +136,31 @@
 				<div data-ng-repeat="ppd in projectPanelData"
 					class="panel panel-default">
 				<div class="panel-body {{ ppd.bigProjectStatus }}">
-					<h4><b>{{ ppd.name }}</b>,
-						{{ ppd.dateRangeStr }}</h4>
 
-					<span><b>Programming language(s):</b>
-					{{ ppd.programmingLanguagesStr }}</span><br />
+					<div class="row">
+						<div class="col-sm-10">
+							<h4><b>{{ ppd.name }}</b>,
+								{{ ppd.dateRangeStr }}</h4>
 
-					<span data-ng-if="ppd.testingFramework != NO_TEST_FRAMEWORK">
-						<b>Testing framework:</b>
-						{{ ppd.testingFramework }}<br /></span>
+							<span><b>Programming language(s):</b>
+							{{ ppd.programmingLanguagesStr }}</span><br />
 
-					<span><b>Other languages/software used:</b>
-					{{ ppd.otherLanguagesOrSoftwareStr }}</span><br />
+							<span data-ng-if="ppd.testingFramework != NO_TEST_FRAMEWORK">
+								<b>Testing framework:</b>
+								{{ ppd.testingFramework }}<br /></span>
 
-					<span><a href="{{ ppd.githubLink }}">
-					GitHub Repository</a>
+							<span><b>Other languages/software used:</b>
+							{{ ppd.otherLanguagesOrSoftwareStr }}</span><br />
+
+							<span><a href="{{ ppd.githubLink }}">
+							GitHub Repository</a></span>
+						</div>
+						<div class="col-sm-2">
+							<img src="images/outer-space-legion.png"
+								class="img-responsive" alt="Game Picture"
+								width="54" height="96" />
+						</div>
+					</div>
 				</div>
 				</div>
 			</div>
