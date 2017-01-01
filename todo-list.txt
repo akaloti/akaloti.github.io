@@ -13,10 +13,12 @@ Next
 	-make proper content (don't just use placeholders to put it off)
 	-lingering concerns
 		-first subpanel's contents aren't centered
+-perhaps find a screen reader to use for testing personal webpage
 -projects preview page
 	-each project preview should have its own panel
 	-mention that a preview can be clicked for more details
 	-contents of each project preview
+		-have option to view bunch of images of a project
 		-tba (see resume for ideas)
 
 
