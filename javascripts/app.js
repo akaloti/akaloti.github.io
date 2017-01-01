@@ -17,11 +17,6 @@ function($stateProvider, $urlRouterProvider) {
 			templateUrl: '/education.html',
 			controller: 'EducationCtrl'
 		})
-		.state('projects', {
-			url: '/projects',
-			templateUrl: '/projects.html',
-			controller: 'ProjectsCtrl'
-		})
 		.state('leadership', {
 			url: '/leadership',
 			templateUrl: '/leadership.html',
@@ -49,12 +44,6 @@ function($scope) {
 }]);
 
 app.controller('EducationCtrl', [
-'$scope',
-function($scope) {
-	
-}]);
-
-app.controller('ProjectsCtrl', [
 '$scope',
 function($scope) {
 	

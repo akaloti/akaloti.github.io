@@ -1,8 +1,8 @@
 Next
 ----
 
--projects preview page
-	-each project preview should have its own panel
+-projects preview panel
+	-each project preview should have its own subpanel
 	-mention that a preview can be clicked for more details
 	-contents of each project preview
 		-have option to view bunch of images of a project
@@ -19,6 +19,9 @@ List of Other, Non-Extraneous Tasks (in no particular order)
 	-on main page, first subpanel's contents aren't centered
 -replace the resume link with a real one
 -use Google custom fonts
+-main page
+	-move tagline to its own panel above the first, so links
+	have more room
 -etc. (other pages)
 
 
