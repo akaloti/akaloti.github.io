@@ -1,19 +1,6 @@
 Next
 ----
 
--main page (minus project previews)
-	-at first just add the panels contents
-		-first panel
-			-*picture and name
-			-*tagline
-			-*links
-		-second panel
-			-link to my development process page
-	-properly format the panels
-	-make proper content (don't just use placeholders to put it off)
-	-lingering concerns
-		-first subpanel's contents aren't centered
--perhaps find a screen reader to use for testing personal webpage
 -projects preview page
 	-each project preview should have its own panel
 	-mention that a preview can be clicked for more details
@@ -28,6 +15,8 @@ List of Other, Non-Extraneous Tasks (in no particular order)
 -education page
 	-mention
 		-current college, degree, etc. (see resume for good ideas)
+-lingering concerns
+	-on main page, first subpanel's contents aren't centered
 -replace the resume link with a real one
 -use Google custom fonts
 -etc. (other pages)
@@ -45,6 +34,7 @@ were used. Just Bootstrap, Angular, etc.
 	that the brand name has
 	-emphasize which navbar link is the current page (this one seems trickier
 	than simple Bootstrap)
+-perhaps find a screen reader to use for testing personal webpage
 
 
 Webpage Angular Templates
