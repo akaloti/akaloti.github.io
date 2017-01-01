@@ -138,7 +138,7 @@
 				<div class="panel-body {{ ppd.bigProjectStatus }}">
 
 					<div class="row">
-						<div class="col-sm-10">
+						<div class="col-sm-6">
 							<h4><b>{{ ppd.name }}</b>,
 								{{ ppd.dateRangeStr }}</h4>
 
@@ -155,9 +155,10 @@
 							<span><a href="{{ ppd.githubLink }}">
 							GitHub Repository</a></span>
 						</div>
-						<div class="col-sm-2">
+						<div class="col-sm-6">
 							<img src="{{ ppd.imageData.src }}"
-								class="img-responsive" alt="Game Picture"
+								class="img-responsive centered-element"
+								alt="Game Picture"
 								width="{{ ppd.imageData.width }}"
 								height="{{ ppd.imageData.height }}" />
 						</div>

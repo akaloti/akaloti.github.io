@@ -86,6 +86,7 @@ function ProjectPanelData(name, dateRangeStr, programmingLanguagesStr,
 var NO_TEST_FRAMEWORK = "";
 var IS_BIG_PROJECT = "big-project"; // the CSS class indicating big project
 var IS_NOT_BIG_PROJECT = "";
+var NO_IMAGE_YET = new ImageData("images/no-image-yet.JPG", 696, 465);
 function getProjectPanelData()
 {
 	var projectPanelData = [];
@@ -98,7 +99,7 @@ function getProjectPanelData()
 		"Catch",
 		"SFML 2.4.0, Git",
 		IS_BIG_PROJECT,
-		new ImageData("images/outer-space-legion.png", 54, 96),
+		NO_IMAGE_YET,
 		"https://github.com/aaronistheman/SFML-Square-Cannonade-Game/tree/develop"));
 	projectPanelData.push(new ProjectPanelData(
 		"RateMyLabPartners.com (fake website)",
@@ -108,7 +109,7 @@ function getProjectPanelData()
 		"MEAN framework (MongoDB/Mongoose, Express, AngularJS, Node.js)"
 			+ ", Bootstrap, HTML/CSS, Git",
 		IS_NOT_BIG_PROJECT,
-		new ImageData("images/outer-space-legion.png", 27, 48),
+		NO_IMAGE_YET,
 		"https://github.com/aaronistheman/MEAN-RateMyLabPartners/tree/develop"));
 	projectPanelData.push(new ProjectPanelData(
 		"Personal Webpage (the one you're looking at)",
@@ -117,7 +118,7 @@ function getProjectPanelData()
 		NO_TEST_FRAMEWORK,
 		"Bootstrap, AngularJS, Git",
 		IS_NOT_BIG_PROJECT,
-		new ImageData("images/outer-space-legion.png", 54, 96),
+		NO_IMAGE_YET,
 		"https://github.com/aaronistheman/aaronistheman.github.io/tree/develop"));
 	projectPanelData.push(new ProjectPanelData(
 		"Simplified Economic Model",
@@ -126,16 +127,16 @@ function getProjectPanelData()
 		"QUnit",
 		"HTML/CSS, Git",
 		IS_BIG_PROJECT,
-		new ImageData("images/outer-space-legion.png", 54, 96),
+		new ImageData("images/economics.png", 443, 317),
 		"https://github.com/aaronistheman/Supply-Demand-Graph-Calculations"));
 	projectPanelData.push(new ProjectPanelData(
-		"2D Spacecraft Android Game",
+		"2D Spacecraft Android Game (\"Outer Space Legion\")",
 		"December 2015 - April 2016",
 		"Java",
 		"JUnit and Android extensions",
 		"Android Studio, Autodesk Inventor, Git",
 		IS_BIG_PROJECT,
-		new ImageData("images/outer-space-legion.png", 54, 96),
+		new ImageData("images/outer-space-legion.png", 180, 320),
 		"https://github.com/aaronistheman/Android-Spacecraft-Game"));
 	projectPanelData.push(new ProjectPanelData(
 		"State Capital Quiz Android App",
@@ -144,7 +145,7 @@ function getProjectPanelData()
 		"JUnit and Android extensions",
 		"Android Studio, Git",
 		IS_NOT_BIG_PROJECT,
-		new ImageData("images/outer-space-legion.png", 54, 96),
+		new ImageData("images/state-capitals-quiz.png", 683, 384),
 		"https://github.com/aaronistheman/Android-State-Capitals-App"));
 	projectPanelData.push(new ProjectPanelData(
 		"Chat Web Application",
@@ -153,7 +154,7 @@ function getProjectPanelData()
 		NO_TEST_FRAMEWORK,
 		"MySQL, JSON, HTML/CSS, Git",
 		IS_NOT_BIG_PROJECT,
-		new ImageData("images/outer-space-legion.png", 54, 96),
+		new ImageData("images/trivial-chat.jpg", 548, 308),
 		"https://github.com/aaronistheman/PHP-Trivial-Chat-Web-Application"));
 	projectPanelData.push(new ProjectPanelData(
 		"Game Show Web Game",
@@ -162,7 +163,7 @@ function getProjectPanelData()
 		"QUnit",
 		"HTML (Canvas), CSS, Git",
 		IS_BIG_PROJECT,
-		new ImageData("images/outer-space-legion.png", 54, 96),
+		new ImageData("images/game-show-fusion.png", 683, 384),
 		"https://github.com/aaronistheman/Deal-or-Smarter-Than-a-Millionaire-SpongeBob-Edition"));
 	projectPanelData.push(new ProjectPanelData(
 		"BS Card Web Game",
@@ -171,7 +172,7 @@ function getProjectPanelData()
 		"QUnit",
 		"HTML/CSS, Git",
 		IS_NOT_BIG_PROJECT,
-		new ImageData("images/outer-space-legion.png", 54, 96),
+		new ImageData("images/bs.jpg", 640, 360),
 		"https://github.com/aaronistheman/BS-Card-Web-Game"));
 	projectPanelData.push(new ProjectPanelData(
 		"Tanks Desktop Game",
@@ -180,7 +181,7 @@ function getProjectPanelData()
 		NO_TEST_FRAMEWORK,
 		"SFML 2.1, Git",
 		IS_BIG_PROJECT,
-		new ImageData("images/outer-space-legion.png", 54, 96),
+		new ImageData("images/tanks.JPG", 541, 304),
 		"https://github.com/aaronistheman/Tanks"));
 	projectPanelData.push(new ProjectPanelData(
 		"Tic Tac Toe with GUI",
@@ -189,7 +190,7 @@ function getProjectPanelData()
 		NO_TEST_FRAMEWORK,
 		"SFML 2.1",
 		IS_NOT_BIG_PROJECT,
-		new ImageData("images/outer-space-legion.png", 54, 96),
+		new ImageData("images/tic-tac-toe.JPG", 658, 318),
 		"https://github.com/aaronistheman/Tic-Tac-Toe-with-GUI"));
 	projectPanelData.push(new ProjectPanelData(
 		"Checkers with GUI",
@@ -198,7 +199,7 @@ function getProjectPanelData()
 		NO_TEST_FRAMEWORK,
 		"SFML 2.0",
 		IS_BIG_PROJECT,
-		new ImageData("images/outer-space-legion.png", 54, 96),
+		new ImageData("images/checkers.jpg", 612, 408),
 		"https://github.com/aaronistheman/Checkers-with-GUI"));
 
 	return projectPanelData;

@@ -2,7 +2,7 @@ Next
 ----
 
 -projects preview panel
-	-use real image of each project
+	-give each image a border
 	-contents of each project preview
 		-*name
 		-*when I worked on it
@@ -36,6 +36,7 @@ List of Other, Non-Extraneous Tasks (in no particular order)
 -main page
 	-move tagline to its own panel above the first, so links
 	have more room
+-personal webpage image
 -etc. (other pages)
 
 
