@@ -142,6 +142,9 @@
 							<h4><b>{{ ppd.name }}</b>,
 								{{ ppd.dateRangeStr }}</h4>
 
+							<span><b><a href="{{ ppd.githubLink }}">
+							GitHub Repository</a></b></span><br />
+
 							<span><b>Programming language(s):</b>
 							{{ ppd.programmingLanguagesStr }}</span><br />
 
@@ -150,10 +153,7 @@
 								{{ ppd.testingFramework }}<br /></span>
 
 							<span><b>Other languages/software used:</b>
-							{{ ppd.otherLanguagesOrSoftwareStr }}</span><br />
-
-							<span><a href="{{ ppd.githubLink }}">
-							GitHub Repository</a></span>
+							{{ ppd.otherLanguagesOrSoftwareStr }}</span>
 						</div>
 						<div class="col-sm-6">
 							<img src="{{ ppd.imageData.src }}"

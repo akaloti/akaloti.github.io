@@ -1,23 +1,6 @@
 Next
 ----
 
--projects preview panel
-	-contents of each project preview
-		-*name
-		-*when I worked on it
-		-selected bulet points
-		-*link to GitHub repository
-		-*include one image of the project
-		(
-		-a button saying "click to see images"
-			-images (x2?)
-				-clicking any image will show more images?
-					-have text that says "Click to See More Images"
-					-images could be in form of a carousel
-					in some sort of popup
-				-or can have gallery of three/four images at bottom
-				of each panel?
-		)
 -reorganize todo list
 -remove education page; my education is on my resume
 
@@ -66,6 +49,23 @@ if I make it more robust); if it's just game(s), can call it "Arcade"
 	-have noteworthy fact with some projects
 	-have noteworthy regret with some projects? (a "not-so-fun fact")
 	-have "biggest challenge" for some/all projects
+-projects preview panel
+	-contents of each project preview
+		-*name
+		-*when I worked on it
+		-selected bulet points
+		-*link to GitHub repository
+		-*include one image of the project
+		(
+		-a button saying "click to see images"
+			-images (x2?)
+				-clicking any image will show more images?
+					-have text that says "Click to See More Images"
+					-images could be in form of a carousel
+					in some sort of popup
+				-or can have gallery of three/four images at bottom
+				of each panel?
+		)
 
 
 Webpage Angular Templates
