@@ -2,8 +2,6 @@ Next
 ----
 
 -projects preview panel
-	-each project preview should have its own subpanel
-	-mention that a preview can be clicked for more details
 	-contents of each project preview
 		-have option to view bunch of images of a project
 		-tba (see resume for ideas)
@@ -25,7 +23,7 @@ List of Other, Non-Extraneous Tasks (in no particular order)
 -etc. (other pages)
 
 
-Relatively extraneous tasks
+Relatively extraneous tasks or Thoughts/Possible Ideas
 -----------------------------
 
 -get a better picture of myself :-)
@@ -38,6 +36,8 @@ were used. Just Bootstrap, Angular, etc.
 	-emphasize which navbar link is the current page (this one seems trickier
 	than simple Bootstrap)
 -perhaps find a screen reader to use for testing personal webpage
+-having each project's panel be a link to a jumbotron/webpage/etc.
+with more details about the project
 
 
 Webpage Angular Templates
