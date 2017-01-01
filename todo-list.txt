@@ -5,8 +5,8 @@ Next
 	-at first just add the panels contents
 		-first panel
 			-*picture and name
-			-tagline
-			-links
+			-*tagline
+			-*links
 		-second panel
 			-link to my development process page
 	-properly format the panels
@@ -28,10 +28,12 @@ List of Other, Non-Extraneous Tasks (in no particular order)
 -education page
 	-mention
 		-current college, degree, etc. (see resume for good ideas)
+-replace the resume link with a real one
+-use Google custom fonts
 -etc. (other pages)
 
 
-Eventually (relatively extraneous tasks)
+Relatively extraneous tasks
 -----------------------------
 
 -get a better picture of myself :-)
@@ -59,3 +61,4 @@ Webpage Angular Templates
 		-Git
 		-todo list
 		-small shell scripts
+-page for noteworthy courses taken
