@@ -2,9 +2,21 @@ Next
 ----
 
 -projects preview panel
+	-have section for unit test framework; don't show if isn't one
 	-contents of each project preview
-		-have option to view bunch of images of a project
-		-tba (see resume for ideas)
+		-*name
+		-*when I worked on it
+		-selected bulet points
+		-*link to GitHub repository
+		-a button saying "click to see images"
+			-images (x2?)
+				-clicking any image will show more images?
+					-have text that says "Click to See More Images"
+					-images could be in form of a carousel
+					in some sort of popup
+				-or can have gallery of three/four images at bottom
+				of each panel?
+-reorganize todo list
 
 
 List of Other, Non-Extraneous Tasks (in no particular order)
@@ -26,6 +38,11 @@ List of Other, Non-Extraneous Tasks (in no particular order)
 Relatively extraneous tasks or Thoughts/Possible Ideas
 -----------------------------
 
+-think of implement-able features that aren't in GitHub/LinkedIn,
+such as
+	-filtering my projects my language
+	-some means of stressing that I do test-driven development
+-put tagline back?
 -get a better picture of myself :-)
 -somewhere on the webpage, mention that no personal website-frameworks
 were used. Just Bootstrap, Angular, etc.
@@ -38,6 +55,9 @@ were used. Just Bootstrap, Angular, etc.
 -perhaps find a screen reader to use for testing personal webpage
 -having each project's panel be a link to a jumbotron/webpage/etc.
 with more details about the project
+-add a navbar link to a page that lets user play/use some of my
+web applications (Game Show Fusion, maybe Simplified Economic Model
+if I make it more robust); if it's just game(s), can call it "Arcade"
 
 
 Webpage Angular Templates

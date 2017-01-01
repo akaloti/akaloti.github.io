@@ -90,20 +90,24 @@
 					<div class="col-sm-5 col-sm-offset-1
 						panel panel-default">
 						<div class="panel-body">
-							<p>Links</p>
 							<div class="list-group">
-								<a href="documents/junk.txt"
-									class="list-group-item">
-									Resume
-									(Last update: December 31, 2016)
-								</a>
+								<!-- GitHub link -->
 								<a href="https://github.com/aaronistheman"
 									class="list-group-item">
-									GitHub
+									GitHub Link
 								</a>
+
+								<!-- Resume link -->
+								<a href="documents/junk.txt"
+									class="list-group-item">
+									Resume Link
+									(Last update: December 31, 2016)
+								</a>
+
+								<!-- LinkedIn link -->
 								<a href=https://www.linkedin.com/in/aaron-kaloti-943656107?trk=nav_responsive_tab_profile_pic"
 									class="list-group-item">
-									LinkedIn
+									LinkedIn Link
 								</a>
 							</div>
 						</div>
@@ -126,30 +130,24 @@
 		<!-- Project previews -->
 		<div class="panel panel-default">
 			<div id="project-previews" class="panel-body">
-				<p>My Projects</p>
+				<h1 class="centered-text">My Projects</h1>
+				<!-- <div class="centered-text">Click a project to see more details.</div> -->
 
-				<div class="panel panel-default">
-					<div class="panel-body">
-						<p>Project #1</p>
-					</div>
+				<div ng-repeat="ppd in projectPanelData"
+					class="panel panel-default">
+				<div class="panel-body">
+					<h4><b>{{ ppd.name }}</b>,
+						{{ ppd.dateRangeStr }}</h4>
+
+					<span><b>Programming language(s):</b>
+					{{ ppd.programmingLanguagesStr }}</span><br />
+
+					<span><b>Other languages/software used:</b>
+					{{ ppd.otherLanguagesOrSoftwareStr }}</span><br />
+
+					<span><a href="{{ ppd.githubLink }}">
+					GitHub Repository</a>
 				</div>
-
-				<div class="panel panel-default">
-					<div class="panel-body">
-						<p>Project #2</p>
-					</div>
-				</div>
-
-				<div class="panel panel-default">
-					<div class="panel-body">
-						<p>Project #3</p>
-					</div>
-				</div>
-
-				<div class="panel panel-default">
-					<div class="panel-body">
-						<p>Project #4</p>
-					</div>
 				</div>
 			</div>
 		</div>
