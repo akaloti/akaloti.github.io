@@ -53,10 +53,10 @@ function failWithMessage(message)
  * preview panel.
  */
 function ProjectPanelData(name, dateRangeStr, programmingLanguagesStr,
-	testingFramework, otherLanguagesOrSoftwareStr, githubLink)
+	testingFramework, otherLanguagesOrSoftwareStr, bigProjectStatus, githubLink)
 {
 	// To catch errors early
-	if (arguments.length != 6)
+	if (arguments.length != 7)
 		failWithMessage("Invalid number of arguments");
 
 	this.name = name;
@@ -64,10 +64,13 @@ function ProjectPanelData(name, dateRangeStr, programmingLanguagesStr,
 	this.programmingLanguagesStr = programmingLanguagesStr;
 	this.testingFramework = testingFramework;
 	this.otherLanguagesOrSoftwareStr = otherLanguagesOrSoftwareStr;
+	this.bigProjectStatus = bigProjectStatus;
 	this.githubLink = githubLink;
 }
 
 var NO_TEST_FRAMEWORK = "";
+var IS_BIG_PROJECT = "big-project"; // the CSS class indicating big project
+var IS_NOT_BIG_PROJECT = "";
 function getProjectPanelData()
 {
 	var projectPanelData = [];
@@ -79,6 +82,7 @@ function getProjectPanelData()
 		"C++",
 		"Catch",
 		"SFML 2.4.0, Git",
+		IS_BIG_PROJECT,
 		"https://github.com/aaronistheman/SFML-Square-Cannonade-Game/tree/develop"));
 	projectPanelData.push(new ProjectPanelData(
 		"RateMyLabPartners.com (fake website)",
@@ -87,6 +91,7 @@ function getProjectPanelData()
 		"(To be determined)",
 		"MEAN framework (MongoDB/Mongoose, Express, AngularJS, Node.js)"
 			+ ", Bootstrap, HTML/CSS, Git",
+		IS_NOT_BIG_PROJECT,
 		"https://github.com/aaronistheman/MEAN-RateMyLabPartners/tree/develop"));
 	projectPanelData.push(new ProjectPanelData(
 		"Personal Webpage (the one you're looking at)",
@@ -94,6 +99,7 @@ function getProjectPanelData()
 		"JavaScript",
 		NO_TEST_FRAMEWORK,
 		"Bootstrap, AngularJS, Git",
+		IS_NOT_BIG_PROJECT,
 		"https://github.com/aaronistheman/aaronistheman.github.io/tree/develop"));
 	projectPanelData.push(new ProjectPanelData(
 		"Simplified Economic Model",
@@ -101,6 +107,7 @@ function getProjectPanelData()
 		"JavaScript",
 		"QUnit",
 		"HTML/CSS, Git",
+		IS_BIG_PROJECT,
 		"https://github.com/aaronistheman/Supply-Demand-Graph-Calculations"));
 	projectPanelData.push(new ProjectPanelData(
 		"2D Spacecraft Android Game",
@@ -108,6 +115,7 @@ function getProjectPanelData()
 		"Java",
 		"JUnit and Android extensions",
 		"Android Studio, Autodesk Inventor, Git",
+		IS_BIG_PROJECT,
 		"https://github.com/aaronistheman/Android-Spacecraft-Game"));
 	projectPanelData.push(new ProjectPanelData(
 		"State Capital Quiz Android App",
@@ -115,6 +123,7 @@ function getProjectPanelData()
 		"Java",
 		"JUnit and Android extensions",
 		"Android Studio, Git",
+		IS_NOT_BIG_PROJECT,
 		"https://github.com/aaronistheman/Android-State-Capitals-App"));
 	projectPanelData.push(new ProjectPanelData(
 		"Chat Web Application",
@@ -122,6 +131,7 @@ function getProjectPanelData()
 		"PHP (back-end), JavaScript (front-end)",
 		NO_TEST_FRAMEWORK,
 		"MySQL, JSON, HTML/CSS, Git",
+		IS_NOT_BIG_PROJECT,
 		"https://github.com/aaronistheman/PHP-Trivial-Chat-Web-Application"));
 	projectPanelData.push(new ProjectPanelData(
 		"Game Show Web Game",
@@ -129,6 +139,7 @@ function getProjectPanelData()
 		"JavaScript",
 		"QUnit",
 		"HTML (Canvas), CSS, Git",
+		IS_BIG_PROJECT,
 		"https://github.com/aaronistheman/Deal-or-Smarter-Than-a-Millionaire-SpongeBob-Edition"));
 	projectPanelData.push(new ProjectPanelData(
 		"BS Card Web Game",
@@ -136,6 +147,7 @@ function getProjectPanelData()
 		"JavaScript",
 		"QUnit",
 		"HTML/CSS, Git",
+		IS_NOT_BIG_PROJECT,
 		"https://github.com/aaronistheman/BS-Card-Web-Game"));
 	projectPanelData.push(new ProjectPanelData(
 		"Tanks Desktop Game",
@@ -143,6 +155,7 @@ function getProjectPanelData()
 		"C++",
 		NO_TEST_FRAMEWORK,
 		"SFML 2.1, Git",
+		IS_BIG_PROJECT,
 		"https://github.com/aaronistheman/Tanks"));
 	projectPanelData.push(new ProjectPanelData(
 		"Tic Tac Toe with GUI",
@@ -150,6 +163,7 @@ function getProjectPanelData()
 		"C++",
 		NO_TEST_FRAMEWORK,
 		"SFML 2.1",
+		IS_NOT_BIG_PROJECT,
 		"https://github.com/aaronistheman/Tic-Tac-Toe-with-GUI"));
 	projectPanelData.push(new ProjectPanelData(
 		"Checkers with GUI",
@@ -157,6 +171,7 @@ function getProjectPanelData()
 		"C++",
 		NO_TEST_FRAMEWORK,
 		"SFML 2.0",
+		IS_BIG_PROJECT,
 		"https://github.com/aaronistheman/Checkers-with-GUI"));
 
 	return projectPanelData;

@@ -133,9 +133,9 @@
 				<h1 class="centered-text">My Projects</h1>
 				<!-- <div class="centered-text">Click a project to see more details.</div> -->
 
-				<div ng-repeat="ppd in projectPanelData"
+				<div data-ng-repeat="ppd in projectPanelData"
 					class="panel panel-default">
-				<div class="panel-body">
+				<div class="panel-body {{ ppd.bigProjectStatus }}">
 					<h4><b>{{ ppd.name }}</b>,
 						{{ ppd.dateRangeStr }}</h4>
 

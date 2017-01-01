@@ -1,12 +1,20 @@
-#project-previews {
-	overflow: scroll;
-	height: 600px;
-}
+
 
 .centered-element {
     margin: auto;
 }
 
 .centered-text {
-	text-align: center;
+    text-align: center;
+}
+
+/* For the wrap-around of the project preview panels */
+#project-previews {
+	overflow: scroll;
+	height: 600px;
+}
+
+/* For a project panel of a big project */
+.big-project {
+    border: 5px solid red;
 }
