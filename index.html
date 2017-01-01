@@ -1,14 +1,14 @@
 <html>
 <head lang="en">
 
-	<title>Aaron Kaloti's Webpage</title>
+	<title>Aaron Kaloti</title>
 
   	<meta charset="utf-8">
   	<meta name="viewport"
     	content="width=device-width, initial-scale=1">
 
 	<!-- Bootstrap's CSS part -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
 
 	<!-- jQuery library -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
@@ -20,6 +20,8 @@
 	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.10/angular.min.js"></script>
 	<script src="http://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.10/angular-ui-router.js"></script>
 
+	<!-- My own included files -->
+	<link rel="stylesheet" href="stylesheets/index.css" />
 	<script src="javascripts/app.js"></script>
 
 </head>
@@ -40,7 +42,6 @@
 			</div>
 			<ul class="nav navbar-nav">
 				<li><a href="#/education">Education</a></li>
-				<li><a href="#/projects">Projects</a></li>
 				<li><a href="#/leadership">Leadership</a></li>
 				<li><a href="#/work">Work Experience</a></li>
 			</ul>
@@ -59,44 +60,54 @@
 				<div class="row">
 
 					<!-- Picture and name panel -->
-					<div class="col-sm-2 col-sm-offset-1
+					<div class="col-sm-4 col-sm-offset-1
 						panel panel-default">
 						<div class="panel-body">
+							<!-- Image of Aaron Kaloti (me) -->
 							<img src="images/aaron-kaloti.JPG"
-								class="img-circle img-responsive"
+								class="img-circle img-responsive
+									centered-element"
 								alt="Picture of Aaron Kaloti"
-								height="100" width="100" /><br />
-							<b>Aaron Kaloti</b><br />
+								height="100" width="100" />
+
+							<div class="centered-text"><h4>Aaron Kaloti</h4></div>
+
+							<div class="centered-text"><b>Email:</b> aarons [dot]
+								7007 [at] gmail [dot] com</div>
 						</div>
 					</div>
 
 					<!-- Tagline panel -->
-					<div class="col-sm-3 col-sm-offset-1
+					<!-- <div class="col-sm-3 col-sm-offset-1
 						panel panel-default">
 						<div class="panel-body">
 							<p>Second-year Computer Science and Engineering student at UC Davis.
 								Seeking summer internship.</p>
 						</div>
-					</div>
+					</div> -->
 
 					<!-- Links panel -->
-					<div class="col-sm-3 col-sm-offset-1
+					<div class="col-sm-5 col-sm-offset-1
 						panel panel-default">
 						<div class="panel-body">
-							<p>Links</p>
 							<div class="list-group">
-								<a href="documents/junk.txt"
-									class="list-group-item">
-									Resume
-									(Last update: December 31, 2016)
-								</a>
+								<!-- GitHub link -->
 								<a href="https://github.com/aaronistheman"
 									class="list-group-item">
-									GitHub
+									GitHub Link
 								</a>
+
+								<!-- Resume link -->
+								<a href="documents/junk.txt"
+									class="list-group-item">
+									Resume Link
+									(Last update: December 31, 2016)
+								</a>
+
+								<!-- LinkedIn link -->
 								<a href=https://www.linkedin.com/in/aaron-kaloti-943656107?trk=nav_responsive_tab_profile_pic"
 									class="list-group-item">
-									LinkedIn
+									LinkedIn Link
 								</a>
 							</div>
 						</div>
@@ -116,9 +127,45 @@
 			</div>
 		</div>
 
+		<!-- Project previews -->
 		<div class="panel panel-default">
-			<div class="panel-body">
-				<iframe src="projects-preview-template.html"></iframe>
+			<div id="project-previews" class="panel-body">
+				<h1 class="centered-text">My Projects</h1>
+				<!-- <div class="centered-text">Click a project to see more details.</div> -->
+
+				<div data-ng-repeat="ppd in projectPanelData"
+					class="panel panel-default">
+				<div class="panel-body {{ ppd.bigProjectStatus }}">
+
+					<div class="row">
+						<div class="col-sm-6">
+							<h4><b>{{ ppd.name }}</b>,
+								{{ ppd.dateRangeStr }}</h4>
+
+							<span><b><a href="{{ ppd.githubLink }}">
+							GitHub Repository</a></b></span><br />
+
+							<span><b>Programming language(s):</b>
+							{{ ppd.programmingLanguagesStr }}</span><br />
+
+							<span data-ng-if="ppd.testingFramework != NO_TEST_FRAMEWORK">
+								<b>Testing framework:</b>
+								{{ ppd.testingFramework }}<br /></span>
+
+							<span><b>Other languages/software used:</b>
+							{{ ppd.otherLanguagesOrSoftwareStr }}</span>
+						</div>
+						<div class="col-sm-6">
+							<img src="{{ ppd.imageData.src }}"
+								class="img-responsive centered-element
+									project-panel-image"
+								alt="Game Picture"
+								width="{{ ppd.imageData.width }}"
+								height="{{ ppd.imageData.height }}" />
+						</div>
+					</div>
+				</div>
+				</div>
 			</div>
 		</div>
 	</script> <!-- template: home.html -->
@@ -126,10 +173,6 @@
 	<script type="text/ng-template" id="/education.html">
 		<p>education.html</p>
 	</script> <!-- template: education.html -->
-
-	<script type="text/ng-template" id="/projects.html">
-		<iframe src="projects-preview-template.html"></iframe>
-	</script> <!-- template: projects.html -->
 
 	<script type="text/ng-template" id="/leadership.html">
 		<p>leadership.html</p>

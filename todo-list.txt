@@ -1,12 +1,8 @@
 Next
 ----
 
--projects preview page
-	-each project preview should have its own panel
-	-mention that a preview can be clicked for more details
-	-contents of each project preview
-		-have option to view bunch of images of a project
-		-tba (see resume for ideas)
+-reorganize todo list
+-remove education page; my education is on my resume
 
 
 List of Other, Non-Extraneous Tasks (in no particular order)
@@ -19,12 +15,21 @@ List of Other, Non-Extraneous Tasks (in no particular order)
 	-on main page, first subpanel's contents aren't centered
 -replace the resume link with a real one
 -use Google custom fonts
+-main page
+	-move tagline to its own panel above the first, so links
+	have more room
+-personal webpage image
 -etc. (other pages)
 
 
-Relatively extraneous tasks
+Relatively extraneous tasks or Thoughts/Possible Ideas
 -----------------------------
 
+-think of implement-able features that aren't in GitHub/LinkedIn,
+such as
+	-filtering my projects my language
+	-some means of stressing that I do test-driven development
+-put tagline back?
 -get a better picture of myself :-)
 -somewhere on the webpage, mention that no personal website-frameworks
 were used. Just Bootstrap, Angular, etc.
@@ -35,6 +40,32 @@ were used. Just Bootstrap, Angular, etc.
 	-emphasize which navbar link is the current page (this one seems trickier
 	than simple Bootstrap)
 -perhaps find a screen reader to use for testing personal webpage
+-having each project's panel be a link to a jumbotron/webpage/etc.
+with more details about the project
+-add a navbar link to a page that lets user play/use some of my
+web applications (Game Show Fusion, maybe Simplified Economic Model
+if I make it more robust); if it's just game(s), can call it "Arcade"
+-ideas to make panels more interesting
+	-have noteworthy fact with some projects
+	-have noteworthy regret with some projects? (a "not-so-fun fact")
+	-have "biggest challenge" for some/all projects
+-projects preview panel
+	-contents of each project preview
+		-*name
+		-*when I worked on it
+		-selected bulet points
+		-*link to GitHub repository
+		-*include one image of the project
+		(
+		-a button saying "click to see images"
+			-images (x2?)
+				-clicking any image will show more images?
+					-have text that says "Click to See More Images"
+					-images could be in form of a carousel
+					in some sort of popup
+				-or can have gallery of three/four images at bottom
+				of each panel?
+		)
 
 
 Webpage Angular Templates
