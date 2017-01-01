@@ -2,16 +2,13 @@ Next
 ----
 
 -projects preview panel
+	-use real image of each project
 	-contents of each project preview
 		-*name
 		-*when I worked on it
 		-selected bulet points
 		-*link to GitHub repository
-		-include one image of the project
-			-in Angular data, need:
-				-image path
-				-image width
-				-image height
+		-*include one image of the project
 		(
 		-a button saying "click to see images"
 			-images (x2?)
@@ -23,6 +20,7 @@ Next
 				of each panel?
 		)
 -reorganize todo list
+-remove education page; my education is on my resume
 
 
 List of Other, Non-Extraneous Tasks (in no particular order)
