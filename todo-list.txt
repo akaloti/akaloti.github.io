@@ -2,7 +2,6 @@ Next
 ----
 
 -projects preview panel
-	-give each image a border
 	-contents of each project preview
 		-*name
 		-*when I worked on it
