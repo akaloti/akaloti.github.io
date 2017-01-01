@@ -2,11 +2,9 @@ Next
 ----
 
 -projects preview panel
-	-convert tabs to spaces
-	-have section for unit test framework; don't show if isn't one
 	-hi lite "big projects" in certain color
 	-have noteworthy fact with some projects
-	-have noteworthy regret with some projects?
+	-have noteworthy regret with some projects? (a "not-so-fun fact")
 	-contents of each project preview
 		-*name
 		-*when I worked on it

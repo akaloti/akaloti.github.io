@@ -168,6 +168,7 @@ app.controller('MainCtrl', [
 '$scope',
 function($scope) {
 	$scope.projectPanelData = getProjectPanelData();
+	$scope.NO_TEST_FRAMEWORK = NO_TEST_FRAMEWORK;
 }]);
 
 app.controller('EducationCtrl', [

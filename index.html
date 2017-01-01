@@ -142,6 +142,10 @@
 					<span><b>Programming language(s):</b>
 					{{ ppd.programmingLanguagesStr }}</span><br />
 
+					<span data-ng-if="ppd.testingFramework != NO_TEST_FRAMEWORK">
+						<b>Testing framework:</b>
+						{{ ppd.testingFramework }}<br /></span>
+
 					<span><b>Other languages/software used:</b>
 					{{ ppd.otherLanguagesOrSoftwareStr }}</span><br />
 
