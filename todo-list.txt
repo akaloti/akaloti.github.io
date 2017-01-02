@@ -3,6 +3,11 @@ Next (in particular order)
 
 -make personal webpage look beautiful and unique,
 but still easy on the eye
+	-bounding boxes
+		-remove the panel *visually* around the links
+	-texts
+-"leadership" page
+-"my development process" page
 
 
 Finishing Touches
@@ -42,6 +47,7 @@ such as
 -add a navbar link to a page that lets user play/use some of my
 web applications (Game Show Fusion, maybe Simplified Economic Model
 if I make it more robust); if it's just game(s), can call it "Arcade"
+-use CSS variables somehow (e.g. SASS, LESS)
 
 
 Webpage Angular Templates
