@@ -1,13 +1,7 @@
 Next (in particular order)
 ----
 
-
-
-Before Finished (in no particular order)
----------------
-
--see if there's anything from the "Considerable" section
-that I want to implement
+-put (smaller) tagline back, but perhaps in the panel with my name and pic
 -make personal webpage look beautiful and unique,
 but still easy on the eye
 
@@ -29,31 +23,26 @@ across it; good for personal branding)
 -some means of providing more information on a project if desired,
 since an average viewer may not be able to tell what each project does
 and may be curious about it
+	-having each project's panel be a link to a jumbotron/webpage/etc.
+	with more details about the project
+	-ideas to make project preview panels more interesting
+		-have noteworthy fact with some projects
+		-have noteworthy regret with some projects? (a "not-so-fun fact")
+		-have "biggest challenge" for some/all projects
+		-regarding showing more images
+			-have gallery of three/four images at bottom of each panel
+			-clicking an image generates a popup showing a carousel
+			of images
 -somewhere on the webpage, mention that no personal website-frameworks
 were used. Just Bootstrap, Angular, etc.
 -use Google custom fonts
 -think of implement-able features that aren't in GitHub/LinkedIn,
 such as
 	-filtering my projects by language
--put tagline back
-	-possible pros of tagline:
-		-so it's know that I'm a prospective software engineer to
-		the average viewer (do I care, though? a recruiter would
-		have my resume and know I'm a programmer?)
 -perhaps find a screen reader to use for testing personal webpage
--having each project's panel be a link to a jumbotron/webpage/etc.
-with more details about the project
 -add a navbar link to a page that lets user play/use some of my
 web applications (Game Show Fusion, maybe Simplified Economic Model
 if I make it more robust); if it's just game(s), can call it "Arcade"
--ideas to make project preview panels more interesting
-	-have noteworthy fact with some projects
-	-have noteworthy regret with some projects? (a "not-so-fun fact")
-	-have "biggest challenge" for some/all projects
-	-regarding showing more images
-		-have gallery of three/four images at bottom of each panel
-		-clicking an image generates a popup showing a carousel
-		of images
 
 
 Webpage Angular Templates
