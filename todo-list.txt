@@ -1,7 +1,6 @@
 Next (in particular order)
 ----
 
--put (smaller) tagline back, but perhaps in the panel with my name and pic
 -make personal webpage look beautiful and unique,
 but still easy on the eye
 
