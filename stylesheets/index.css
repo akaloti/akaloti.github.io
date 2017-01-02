@@ -33,6 +33,11 @@ body {
     background-color: #CBADA8;
 }
 
+.link {
+    border: 5px solid #4D423F;
+    background-color: #CBADA8;
+}
+
 img.project-panel-image {
     border: 1px solid black;
 }

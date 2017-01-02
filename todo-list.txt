@@ -3,9 +3,7 @@ Next (in particular order)
 
 -make personal webpage look beautiful and unique,
 but still easy on the eye
-	-bounding boxes
-		-remove the panel *visually* around the links
-	-texts
+	-texts (sizes/looks/etc.)
 -"leadership" page
 -"my development process" page
 
