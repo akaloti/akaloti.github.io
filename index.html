@@ -28,7 +28,7 @@
 <body data-ng-app="personalWebpage" data-ng-cloak>
 <div class="container">
 
-	<nav class="navbar navbar-default">
+	<nav class="navbar navbar-default main-page-major-element">
 		<div class="container">
 			<!-- <div class="navbar-header">
 				<a class="navbar-brand" href="#/home.html">Aaron Kaloti</a>
@@ -46,17 +46,15 @@
 	<ui-view></ui-view>
 
 	<script type="text/ng-template" id="/home.html">
-		<!-- <p>home.html</p> -->
-
-		<div class="panel panel-default">
+		<div class="panel panel-default main-page-major-element">
 			<div class="panel-body">
 			
 				<!-- This panel has subpanels using the grid system -->
 				<div class="row">
 
 					<!-- Picture and name panel -->
-					<div class="col-sm-4 col-sm-offset-1
-						panel panel-default">
+					<div class="col-sm-5 col-sm-offset-1
+						panel panel-default" id="me-panel">
 						<div class="panel-body">
 							<!-- Image of Aaron Kaloti (me) -->
 							<img src="images/aaron-kaloti.JPG"
@@ -67,42 +65,38 @@
 
 							<div class="centered-text"><h4>Aaron Kaloti</h4></div>
 
+							<div class="centered-text"><b>Tagline:</b>
+							Second-year Computer Science and Engineering student at UC Davis. Seeking summer internship.</div>
+
 							<div class="centered-text"><b>Email:</b> aarons [dot]
 								7007 [at] gmail [dot] com</div>
 						</div>
 					</div>
 
-					<!-- Tagline panel -->
-					<!-- <div class="col-sm-3 col-sm-offset-1
-						panel panel-default">
-						<div class="panel-body">
-							<p>Second-year Computer Science and Engineering student at UC Davis.
-								Seeking summer internship.</p>
-						</div>
-					</div> -->
-
 					<!-- Links panel -->
-					<div class="col-sm-5 col-sm-offset-1
-						panel panel-default">
+					<div class="col-sm-4 col-sm-offset-1
+						panel panel-default" id="links-panel">
 						<div class="panel-body">
 							<div class="list-group">
 								<!-- GitHub link -->
 								<a href="https://github.com/aaronistheman"
-									class="list-group-item">
-									GitHub Link
+									class="list-group-item link">
+									GitHub
 								</a>
+								<br />
 
 								<!-- Resume link -->
 								<a href="documents/junk.txt"
-									class="list-group-item">
-									Resume Link
-									(Last update: December 31, 2016)
+									class="list-group-item link">
+									Resume
+									(Updated: 12/31/2016)
 								</a>
+								<br />
 
 								<!-- LinkedIn link -->
-								<a href=https://www.linkedin.com/in/aaron-kaloti-943656107?trk=nav_responsive_tab_profile_pic"
-									class="list-group-item">
-									LinkedIn Link
+								<a href="https://www.linkedin.com/in/aaron-kaloti-943656107"
+									class="list-group-item link">
+									LinkedIn
 								</a>
 							</div>
 						</div>
@@ -116,14 +110,14 @@
 		</div>
 
 		<!-- Project previews -->
-		<div class="panel panel-default">
+		<div class="panel panel-default main-page-major-element">
 			<div id="project-previews" class="panel-body">
-				<h1 class="centered-text">My Projects</h1>
-				<!-- <div class="centered-text">Click a project to see more details.</div> -->
+				<h1 class="centered-text" id="projects-label">My Projects</h1>
 
 				<div data-ng-repeat="ppd in projectPanelData"
-					class="panel panel-default">
-				<div class="panel-body {{ ppd.bigProjectStatus }}">
+					class="panel panel-default project
+						{{ ppd.bigProjectStatus }}">
+				<div class="panel-body">
 
 					<div class="row">
 						<div class="col-sm-6">
@@ -131,8 +125,8 @@
 								{{ ppd.dateRangeStr }}</h4>
 
 							<span data-ng-if="ppd.githubLink != NO_GITHUB_REPO">
-								<b><a href="{{ ppd.githubLink }}">
-								GitHub Repository</a></b></span><br />
+								<a href="{{ ppd.githubLink }}">
+								GitHub Repository</a></span><br />
 
 							<span><b>Programming language(s):</b>
 							{{ ppd.programmingLanguagesStr }}</span><br />
