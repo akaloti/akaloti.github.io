@@ -210,22 +210,37 @@ function getProjectPanelData()
 
 
 
+var NAVBAR_HOME_ID = "#navbar-home";
+var NAVBAR_LEADERSHIP_ID = "#navbar-leadership";
+var NAVBAR_DEVELOPMENT_PROCESS_ID = "#navbar-development-process";
+var NAVBAR_UNORDERED_LIST_ID = "#navbar-unordered-list";
+
+function makeAllNavbarButtonsInactive()
+{
+	$(NAVBAR_UNORDERED_LIST_ID).children().removeClass("active");
+}
+
 app.controller('MainCtrl', [
 '$scope',
 function($scope) {
 	$scope.projectPanelData = getProjectPanelData();
 	$scope.NO_TEST_FRAMEWORK = NO_TEST_FRAMEWORK;
 	$scope.NO_GITHUB_REPO = NO_GITHUB_REPO;
+
+	makeAllNavbarButtonsInactive();
+	$(NAVBAR_HOME_ID).addClass("active");
 }]);
 
 app.controller('LeadershipCtrl', [
 '$scope',
 function($scope) {
-	
+	makeAllNavbarButtonsInactive();
+	$(NAVBAR_LEADERSHIP_ID).addClass("active");
 }]);
 
 app.controller('DevelopmentProcessCtrl', [
 '$scope',
 function($scope) {
-	
+	makeAllNavbarButtonsInactive();
+	$(NAVBAR_DEVELOPMENT_PROCESS_ID).addClass("active");
 }]);

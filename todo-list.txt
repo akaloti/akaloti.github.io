@@ -1,11 +1,6 @@
 Next (in particular order)
 ----
 
--improve navigation bar
-	-emphasize which navbar link is the current page (this one seems trickier
-	than simple Bootstrap)
-		-could use the "active" class; would have to set it on
-		the right one with basic JavaScript
 
 
 Before Finished (in no particular order)
