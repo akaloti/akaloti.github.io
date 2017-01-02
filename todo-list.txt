@@ -1,11 +1,6 @@
 Next (in particular order)
 ----
 
--optional info for each project panel
-	-have noteworthy fact with some projects
-	-have noteworthy regret with some projects? (a "not-so-fun fact")
-	-have "biggest challenge" for some/all projects
--personal webpage image that is a recursive photo of the personal webpage
 -"leadership" page
 -"my development process" page
 
@@ -13,6 +8,7 @@ Next (in particular order)
 Finishing Touches
 -----------------
 
+-final proofread of all content
 -have "current" images of my other current projects
 -replace the resume link with a real one
 
