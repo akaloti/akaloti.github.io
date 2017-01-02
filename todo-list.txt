@@ -1,36 +1,36 @@
 Next (in particular order)
 ----
 
--add panel for Shift/Runs Interface Project
--remove education page; my education is on my resume
--somewhere on the webpage, mention that no personal website-frameworks
-were used. Just Bootstrap, Angular, etc.
+-improve navigation bar
+	-make a link (not the brand name) to the home page; remove the link
+	that the brand name has
+	-move development process to the navbar
+	-emphasize which navbar link is the current page (this one seems trickier
+	than simple Bootstrap)
 
 
 Before Finished (in no particular order)
 ---------------
 
--improve navigation bar
-	-make a link (not the brand name) to the home page; remove the link
-	that the brand name has
-	-emphasize which navbar link is the current page (this one seems trickier
-	than simple Bootstrap)
 -see if there's anything from the "Considerable" section
 that I want to implement
+-make personal webpage look beautiful and unique,
+but still easy on the eye
 
 
 Finishing Touches
 -----------------
 
--make personal webpage look beautiful and unique,
-but still easy on the eye
--personal webpage image
+-personal webpage image that is a recursive photo of the personal webpage
+-have "current" images of my other current projects
 -replace the resume link with a real one
 
 
 Considerable
 ------------
 
+-somewhere on the webpage, mention that no personal website-frameworks
+were used. Just Bootstrap, Angular, etc.
 -use Google custom fonts
 -think of implement-able features that aren't in GitHub/LinkedIn,
 such as

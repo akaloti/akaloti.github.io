@@ -28,22 +28,13 @@
 <body data-ng-app="personalWebpage" data-ng-cloak>
 <div class="container">
 
-	<!--
-	<p>Greetings! This is Aaron Kaloti's currently unfinished webpage.
-	He hopes to have it finished by the end of December.
-	Ideally without the use of any web design frameworks (though
-	libraries such as jQuery and Bootstrap are fair game).</p>
-	-->
-
 	<nav class="navbar navbar-default">
 		<div class="container-fluid">
 			<div class="navbar-header">
 				<a class="navbar-brand" href="#/home.html">Aaron Kaloti</a>
 			</div>
 			<ul class="nav navbar-nav">
-				<li><a href="#/education">Education</a></li>
 				<li><a href="#/leadership">Leadership</a></li>
-				<li><a href="#/work">Work Experience</a></li>
 			</ul>
 		</div>
 	</nav>
@@ -120,12 +111,12 @@
 			</div>
 		</div>
 
-		<div class="panel panel-default">
+		<!-- <div class="panel panel-default">
 			<div class="panel-body">
 				For details of my solo development process,
 				please click <a href="#/development-process">here</a>.
 			</div>
-		</div>
+		</div> -->
 
 		<!-- Project previews -->
 		<div class="panel panel-default">
@@ -142,8 +133,9 @@
 							<h4><b>{{ ppd.name }}</b>,
 								{{ ppd.dateRangeStr }}</h4>
 
-							<span><b><a href="{{ ppd.githubLink }}">
-							GitHub Repository</a></b></span><br />
+							<span data-ng-if="ppd.githubLink != NO_GITHUB_REPO">
+								<b><a href="{{ ppd.githubLink }}">
+								GitHub Repository</a></b></span><br />
 
 							<span><b>Programming language(s):</b>
 							{{ ppd.programmingLanguagesStr }}</span><br />
@@ -170,17 +162,9 @@
 		</div>
 	</script> <!-- template: home.html -->
 
-	<script type="text/ng-template" id="/education.html">
-		<p>education.html</p>
-	</script> <!-- template: education.html -->
-
 	<script type="text/ng-template" id="/leadership.html">
 		<p>leadership.html</p>
 	</script> <!-- template: leadership.html -->
-
-	<script type="text/ng-template" id="/work.html">
-		<p>work.html</p>
-	</script> <!-- template: work.html -->
 
 	<script type="text/ng-template" id="/development-process.html">
 		<p>development-process.html</p>
