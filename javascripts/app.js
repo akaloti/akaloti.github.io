@@ -51,12 +51,14 @@ function ImageData(src, width, height)
  * preview panel.
  */
 function ProjectPanelData(name, dateRangeStr, programmingLanguagesStr,
-	testingFramework, otherLanguagesOrSoftwareStr, bigProjectStatus,
+	testingFramework, otherLanguagesOrSoftwareStr,
+	funNote, biggestChallenge, biggestRegret,
+	bigProjectStatus,
 	imageData,
 	githubLink)
 {
 	// To catch errors early
-	if (arguments.length != 8)
+	if (arguments.length != 11)
 		failWithMessage("Invalid number of arguments");
 
 	this.name = name;
@@ -64,6 +66,11 @@ function ProjectPanelData(name, dateRangeStr, programmingLanguagesStr,
 	this.programmingLanguagesStr = programmingLanguagesStr;
 	this.testingFramework = testingFramework;
 	this.otherLanguagesOrSoftwareStr = otherLanguagesOrSoftwareStr;
+
+	this.funNote = funNote;
+	this.biggestChallenge = biggestChallenge;
+	this.biggestRegret = biggestRegret;
+
 	this.bigProjectStatus = bigProjectStatus;
 
 	if (!(imageData instanceof ImageData))
@@ -74,6 +81,10 @@ function ProjectPanelData(name, dateRangeStr, programmingLanguagesStr,
 }
 
 var NO_TEST_FRAMEWORK = "";
+
+var NO_FUN_NOTE = false;
+var NO_BIGGEST_CHALLENGE = false;
+var NO_BIGGEST_REGRET = false;
 
 var IS_BIG_PROJECT = "big-project"; 	// the CSS class indicating big project
 var IS_NOT_BIG_PROJECT = ""; 	// indicates no CSS class
@@ -92,6 +103,9 @@ function getProjectPanelData()
 		"C++",
 		"Catch",
 		"SFML 2.4.0, Git",
+		NO_FUN_NOTE,
+		NO_BIGGEST_CHALLENGE,
+		NO_BIGGEST_REGRET,
 		IS_BIG_PROJECT,
 		NO_IMAGE_YET,
 		"https://github.com/aaronistheman/SFML-Square-Cannonade-Game/tree/develop"));
@@ -102,6 +116,9 @@ function getProjectPanelData()
 		"(To be determined)",
 		"MEAN framework (MongoDB/Mongoose, Express, AngularJS, Node.js)"
 			+ ", Bootstrap, HTML/CSS, Git",
+		NO_FUN_NOTE,
+		NO_BIGGEST_CHALLENGE,
+		NO_BIGGEST_REGRET,
 		IS_NOT_BIG_PROJECT,
 		NO_IMAGE_YET,
 		"https://github.com/aaronistheman/MEAN-RateMyLabPartners/tree/develop"));
@@ -111,6 +128,9 @@ function getProjectPanelData()
 		"JavaScript",
 		NO_TEST_FRAMEWORK,
 		"Bootstrap, AngularJS, Git",
+		NO_FUN_NOTE,
+		NO_BIGGEST_CHALLENGE,
+		NO_BIGGEST_REGRET,
 		IS_NOT_BIG_PROJECT,
 		NO_IMAGE_YET,
 		"https://github.com/aaronistheman/aaronistheman.github.io/tree/develop"));
@@ -120,6 +140,9 @@ function getProjectPanelData()
 		"JavaScript",
 		"QUnit",
 		"HTML/CSS, Git",
+		NO_FUN_NOTE,
+		NO_BIGGEST_CHALLENGE,
+		NO_BIGGEST_REGRET,
 		IS_BIG_PROJECT,
 		new ImageData("images/economics.png", 443, 317),
 		"https://github.com/aaronistheman/Supply-Demand-Graph-Calculations"));
@@ -129,6 +152,9 @@ function getProjectPanelData()
 		"Python (back-end), JavaScript (front-end)",
 		"unittest (\"PyUnit\") and Django's extensions",
 		"Django, HTML/CSS, Git",
+		NO_FUN_NOTE,
+		NO_BIGGEST_CHALLENGE,
+		NO_BIGGEST_REGRET,
 		IS_NOT_BIG_PROJECT,
 		new ImageData("images/shift-project.JPG", 407, 354),
 		NO_GITHUB_REPO));
@@ -138,6 +164,9 @@ function getProjectPanelData()
 		"Java",
 		"JUnit and Android extensions",
 		"Android Studio, Autodesk Inventor, Git",
+		NO_FUN_NOTE,
+		NO_BIGGEST_CHALLENGE,
+		NO_BIGGEST_REGRET,
 		IS_BIG_PROJECT,
 		new ImageData("images/outer-space-legion.png", 180, 320),
 		"https://github.com/aaronistheman/Android-Spacecraft-Game"));
@@ -147,6 +176,9 @@ function getProjectPanelData()
 		"Java",
 		"JUnit and Android extensions",
 		"Android Studio, Git",
+		NO_FUN_NOTE,
+		NO_BIGGEST_CHALLENGE,
+		NO_BIGGEST_REGRET,
 		IS_NOT_BIG_PROJECT,
 		new ImageData("images/state-capitals-quiz.png", 683, 384),
 		"https://github.com/aaronistheman/Android-State-Capitals-App"));
@@ -156,6 +188,9 @@ function getProjectPanelData()
 		"PHP (back-end), JavaScript (front-end)",
 		NO_TEST_FRAMEWORK,
 		"MySQL, JSON, HTML/CSS, Git",
+		NO_FUN_NOTE,
+		NO_BIGGEST_CHALLENGE,
+		NO_BIGGEST_REGRET,
 		IS_NOT_BIG_PROJECT,
 		new ImageData("images/trivial-chat.jpg", 548, 308),
 		"https://github.com/aaronistheman/PHP-Trivial-Chat-Web-Application"));
@@ -165,6 +200,9 @@ function getProjectPanelData()
 		"JavaScript",
 		"QUnit",
 		"HTML (Canvas), CSS, Git",
+		NO_FUN_NOTE,
+		NO_BIGGEST_CHALLENGE,
+		NO_BIGGEST_REGRET,
 		IS_BIG_PROJECT,
 		new ImageData("images/game-show-fusion.png", 683, 384),
 		"https://github.com/aaronistheman/Deal-or-Smarter-Than-a-Millionaire-SpongeBob-Edition"));
@@ -174,6 +212,9 @@ function getProjectPanelData()
 		"JavaScript",
 		"QUnit",
 		"HTML/CSS, Git",
+		NO_FUN_NOTE,
+		NO_BIGGEST_CHALLENGE,
+		NO_BIGGEST_REGRET,
 		IS_NOT_BIG_PROJECT,
 		new ImageData("images/bs.jpg", 640, 360),
 		"https://github.com/aaronistheman/BS-Card-Web-Game"));
@@ -183,6 +224,9 @@ function getProjectPanelData()
 		"C++",
 		NO_TEST_FRAMEWORK,
 		"SFML 2.1, Git",
+		NO_FUN_NOTE,
+		NO_BIGGEST_CHALLENGE,
+		NO_BIGGEST_REGRET,
 		IS_BIG_PROJECT,
 		new ImageData("images/tanks.JPG", 541, 304),
 		"https://github.com/aaronistheman/Tanks"));
@@ -192,6 +236,9 @@ function getProjectPanelData()
 		"C++",
 		NO_TEST_FRAMEWORK,
 		"SFML 2.1",
+		NO_FUN_NOTE,
+		NO_BIGGEST_CHALLENGE,
+		NO_BIGGEST_REGRET,
 		IS_NOT_BIG_PROJECT,
 		new ImageData("images/tic-tac-toe.JPG", 658, 318),
 		"https://github.com/aaronistheman/Tic-Tac-Toe-with-GUI"));
@@ -201,6 +248,9 @@ function getProjectPanelData()
 		"C++",
 		NO_TEST_FRAMEWORK,
 		"SFML 2.0",
+		NO_FUN_NOTE,
+		NO_BIGGEST_CHALLENGE,
+		NO_BIGGEST_REGRET,
 		IS_BIG_PROJECT,
 		new ImageData("images/checkers.jpg", 612, 408),
 		"https://github.com/aaronistheman/Checkers-with-GUI"));
@@ -225,6 +275,9 @@ app.controller('MainCtrl', [
 function($scope) {
 	$scope.projectPanelData = getProjectPanelData();
 	$scope.NO_TEST_FRAMEWORK = NO_TEST_FRAMEWORK;
+	// $scope.NO_FUN_NOTE = NO_FUN_NOTE;
+	// $scope.NO_BIGGEST_CHALLENGE = NO_BIGGEST_CHALLENGE;
+	// $scope.NO_BIGGEST_REGRET = NO_BIGGEST_REGRET;
 	$scope.NO_GITHUB_REPO = NO_GITHUB_REPO;
 
 	makeAllNavbarButtonsInactive();

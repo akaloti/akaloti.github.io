@@ -136,7 +136,23 @@
 								{{ ppd.testingFramework }}<br /></span>
 
 							<span><b>Other languages/software used:</b>
-							{{ ppd.otherLanguagesOrSoftwareStr }}</span>
+							{{ ppd.otherLanguagesOrSoftwareStr }}</span><br />
+
+							<span data-ng-if="ppd.funNote">
+								<br />
+								<b>Fun note:</b> {{ ppd.funNote }}
+							</span>
+
+							<span data-ng-if="ppd.biggestChallenge">
+								<br />
+								<b>Biggest challenge:</b>
+								{{ ppd.biggestChallenge }}
+							</span>
+
+							<span data-ng-if="ppd.biggestRegret">
+								<br />
+								<b>Biggest regret:</b> {{ ppd.biggestRegret }}
+							</span>
 						</div>
 						<div class="col-sm-6">
 							<img src="{{ ppd.imageData.src }}"
