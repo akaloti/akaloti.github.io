@@ -112,7 +112,8 @@
 		<!-- Project previews -->
 		<div class="panel panel-default main-page-major-element">
 			<div id="project-previews" class="panel-body">
-				<h1 class="centered-text" id="projects-label">My Projects</h1>
+				<h1 class="centered-text" id="projects-label">
+					Personal Projects</h1>
 
 				<div data-ng-repeat="ppd in projectPanelData"
 					class="panel panel-default project
@@ -136,7 +137,23 @@
 								{{ ppd.testingFramework }}<br /></span>
 
 							<span><b>Other languages/software used:</b>
-							{{ ppd.otherLanguagesOrSoftwareStr }}</span>
+							{{ ppd.otherLanguagesOrSoftwareStr }}</span><br />
+
+							<span data-ng-if="ppd.funNote">
+								<br />
+								<b>Fun note:</b> {{ ppd.funNote }}
+							</span>
+
+							<span data-ng-if="ppd.biggestChallenge">
+								<br />
+								<b>Biggest challenge:</b>
+								{{ ppd.biggestChallenge }}
+							</span>
+
+							<span data-ng-if="ppd.biggestRegret">
+								<br />
+								<b>Biggest regret:</b> {{ ppd.biggestRegret }}
+							</span>
 						</div>
 						<div class="col-sm-6">
 							<img src="{{ ppd.imageData.src }}"
