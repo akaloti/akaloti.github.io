@@ -40,9 +40,17 @@ body {
     padding-bottom: 5px;
 }
 
-.link {
+div.list-group .link {
     border: 5px solid #4D423F;
-    background-color: #CBADA8;
+    background-color: #B79898;
+}
+
+div.list-group .link:hover {
+    border-color: #F7F0F0;
+}
+
+a {
+    font-weight: bold;
 }
 
 img.project-panel-image {

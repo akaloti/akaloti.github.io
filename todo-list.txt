@@ -1,12 +1,11 @@
 Next (in particular order)
 ----
 
--make personal webpage look beautiful and unique,
-but still easy on the eye
-	-texts (sizes/looks/etc.)
-		-make navbar button names stand out more
-		-make link button names stand out more
--add fun note to each project panel
+-optional info for each project panel
+	-have noteworthy fact with some projects
+	-have noteworthy regret with some projects? (a "not-so-fun fact")
+	-have "biggest challenge" for some/all projects
+-personal webpage image that is a recursive photo of the personal webpage
 -"leadership" page
 -"my development process" page
 
@@ -14,7 +13,6 @@ but still easy on the eye
 Finishing Touches
 -----------------
 
--personal webpage image that is a recursive photo of the personal webpage
 -have "current" images of my other current projects
 -replace the resume link with a real one
 
@@ -31,9 +29,6 @@ and may be curious about it
 	-having each project's panel be a link to a jumbotron/webpage/etc.
 	with more details about the project
 	-ideas to make project preview panels more interesting
-		-have noteworthy fact with some projects
-		-have noteworthy regret with some projects? (a "not-so-fun fact")
-		-have "biggest challenge" for some/all projects
 		-regarding showing more images
 			-have gallery of three/four images at bottom of each panel
 			-clicking an image generates a popup showing a carousel
