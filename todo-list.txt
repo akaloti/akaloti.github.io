@@ -4,6 +4,9 @@ Next (in particular order)
 -make personal webpage look beautiful and unique,
 but still easy on the eye
 	-texts (sizes/looks/etc.)
+		-make navbar button names stand out more
+		-make link button names stand out more
+-add fun note to each project panel
 -"leadership" page
 -"my development process" page
 
