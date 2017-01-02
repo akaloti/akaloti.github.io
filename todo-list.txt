@@ -2,11 +2,10 @@ Next (in particular order)
 ----
 
 -improve navigation bar
-	-make a link (not the brand name) to the home page; remove the link
-	that the brand name has
-	-move development process to the navbar
 	-emphasize which navbar link is the current page (this one seems trickier
 	than simple Bootstrap)
+		-could use the "active" class; would have to set it on
+		the right one with basic JavaScript
 
 
 Before Finished (in no particular order)
@@ -29,6 +28,12 @@ Finishing Touches
 Considerable
 ------------
 
+-erase the assumption that only recruiters who have my resume
+will view the webpage (that is, assume other people may stumble
+across it; good for personal branding)
+-some means of providing more information on a project if desired,
+since an average viewer may not be able to tell what each project does
+and may be curious about it
 -somewhere on the webpage, mention that no personal website-frameworks
 were used. Just Bootstrap, Angular, etc.
 -use Google custom fonts
@@ -36,6 +41,10 @@ were used. Just Bootstrap, Angular, etc.
 such as
 	-filtering my projects by language
 -put tagline back
+	-possible pros of tagline:
+		-so it's know that I'm a prospective software engineer to
+		the average viewer (do I care, though? a recruiter would
+		have my resume and know I'm a programmer?)
 -perhaps find a screen reader to use for testing personal webpage
 -having each project's panel be a link to a jumbotron/webpage/etc.
 with more details about the project
