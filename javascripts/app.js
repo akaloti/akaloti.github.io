@@ -12,20 +12,10 @@ function($stateProvider, $urlRouterProvider) {
 			templateUrl: '/home.html',
 			controller: 'MainCtrl'
 		})
-		.state('education', {
-			url: '/education',
-			templateUrl: '/education.html',
-			controller: 'EducationCtrl'
-		})
 		.state('leadership', {
 			url: '/leadership',
 			templateUrl: '/leadership.html',
 			controller: 'LeadershipCtrl'
-		})
-		.state('work', {
-			url: '/work',
-			templateUrl: '/work.html',
-			controller: 'WorkCtrl'
 		})
 		.state('development-process', {
 			url: '/development-process',
@@ -84,10 +74,13 @@ function ProjectPanelData(name, dateRangeStr, programmingLanguagesStr,
 }
 
 var NO_TEST_FRAMEWORK = "";
-var IS_BIG_PROJECT = "big-project"; // the CSS class indicating big project
-var IS_NOT_BIG_PROJECT = "";
+
+var IS_BIG_PROJECT = "big-project"; 	// the CSS class indicating big project
+var IS_NOT_BIG_PROJECT = ""; 	// indicates no CSS class
+
 var NO_IMAGE_YET = new ImageData("images/no-image-yet.JPG", 696, 465);
 var NO_GITHUB_REPO = "";
+
 function getProjectPanelData()
 {
 	var projectPanelData = [];
@@ -225,19 +218,7 @@ function($scope) {
 	$scope.NO_GITHUB_REPO = NO_GITHUB_REPO;
 }]);
 
-app.controller('EducationCtrl', [
-'$scope',
-function($scope) {
-	
-}]);
-
 app.controller('LeadershipCtrl', [
-'$scope',
-function($scope) {
-	
-}]);
-
-app.controller('WorkCtrl', [
 '$scope',
 function($scope) {
 	
