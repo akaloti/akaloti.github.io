@@ -2,6 +2,7 @@ Next (in particular order)
 ----
 
 -"leadership" page
+	-content
 -"my development process" page
 
 

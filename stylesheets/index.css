@@ -10,7 +10,7 @@ body {
     text-align: center;
 }
 
-.main-page-major-element {
+.main-page-major-element, .panel.leadership-panel {
     border: 5px solid #4D423F;
     background-color: #1F1C1C;
 }
@@ -28,7 +28,8 @@ body {
 }
 */
 
-.panel.project, .panel#me-panel, .panel#links-panel {
+.panel.project, .panel#me-panel, .panel#links-panel,
+    .panel.leadership-inner-panel {
     border: 10px solid #4D423F;
     background-color: #CBADA8;
 }
