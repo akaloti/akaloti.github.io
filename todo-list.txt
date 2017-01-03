@@ -1,9 +1,7 @@
 Next (in particular order)
 ----
 
--final proofread of all content
 -replace the resume link with a real one
--readme
 
 
 Considerable

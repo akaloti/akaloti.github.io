@@ -1,33 +1,20 @@
 # Personal Website (Currently Unfinished)
 
-(Last updated: 12/29/2016)
+(Last updated: 1/2/2017)
 
 About
 -----
 
-This is Aaron Kaloti's currently unfinished website.
-He hopes to have it finished by the end of December.
-Ideally without the use of any web design frameworks (though
-libraries such as jQuery and Bootstrap are fair game).
-
-Through proper use of Bootstrap,
-he aims to have the website be responsive to
-devices of different sizes.
-
-How to View
------------
-
-See the webpage live here:
-https://aaronistheman.github.io/
-
-To run locally:
-Run index.html
+This is my personal webpage. I aimed for a single-page application with AngularJS routing and a responsive webpage with Bootstrap. See the webpage live here: https://aaronistheman.github.io/
 
 Helpful Resources
 -----------------
 
 * W3Schools Bootstrap tutorial:
 http://www.w3schools.com/bootstrap/default.asp
+
+* Introductory MEAN tutorial (helped with AngularJS routing):
+https://thinkster.io/tutorials/mean-stack
 
 About the Author
 ----------------
@@ -36,4 +23,4 @@ About the Author
 * Tagline: Second-year Computer Science and Engineering student
 at UC Davis
 * Email address: aarons.7007@gmail.com
-* Website: https://aaronistheman.github.io/
+* Webpage: https://aaronistheman.github.io/
