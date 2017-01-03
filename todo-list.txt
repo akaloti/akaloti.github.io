@@ -1,19 +1,22 @@
 Next (in particular order)
 ----
 
--"my development process" page
-
-
-Finishing Touches
------------------
-
 -final proofread of all content
 -replace the resume link with a real one
+-readme
 
 
 Considerable
 ------------
 
+-"my development process" page
+	-arguments for
+		-reveal information that may make me look better
+	-arguments against
+		-the information isn't so spectacular
+	-content
+		-source-code control
+		-todo list
 -have the first main page's panel be on each page; change first
 navbar tab to "Personal Projects"
 -erase the assumption that only recruiters who have my resume
