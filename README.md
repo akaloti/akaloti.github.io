@@ -1,4 +1,4 @@
-# Personal Website (Currently Unfinished)
+# Personal Website
 
 (Last updated: 1/2/2017)
 

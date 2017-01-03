@@ -1,7 +1,7 @@
 Next (in particular order)
 ----
 
--replace the resume link with a real one
+-nothing right now
 
 
 Considerable
