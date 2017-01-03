@@ -1,8 +1,6 @@
 Next (in particular order)
 ----
 
--"leadership" page
-	-content
 -"my development process" page
 
 
@@ -10,13 +8,14 @@ Finishing Touches
 -----------------
 
 -final proofread of all content
--have "current" images of my other current projects
 -replace the resume link with a real one
 
 
 Considerable
 ------------
 
+-have the first main page's panel be on each page; change first
+navbar tab to "Personal Projects"
 -erase the assumption that only recruiters who have my resume
 will view the webpage (that is, assume other people may stumble
 across it; good for personal branding)
