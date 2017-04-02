@@ -1,9 +1,6 @@
 Next (in particular order)
 ----
 
--leadership section
-	-update review session info
-	-add info on Robotics Programming Head
 -main panel
 	-removed LinkedIn link? (so I don't have to keep my LinkedIn updated?)
 -convert personal webpage into extended resume
