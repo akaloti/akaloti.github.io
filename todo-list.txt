@@ -1,7 +1,15 @@
 Next (in particular order)
 ----
 
--nothing right now
+-project preview
+	-update RateMyLabPartner info and SquareCannonade info
+-leadership section
+	-update review session info
+	-add info on Robotics Programming Head
+-main panel
+	-removed LinkedIn link?
+-convert personal webpage into extended resume
+-YouTube channel link?
 
 
 Considerable
