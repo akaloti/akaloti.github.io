@@ -39,6 +39,8 @@ function failWithMessage(message)
 
 
 
+// The given width and height are what the image should be SHRINKED
+// to (or EXPANDED, but beware of image resolution)
 function ImageData(src, width, height)
 {
 	this.src = src;
@@ -98,29 +100,17 @@ function getProjectPanelData()
 
 	// The first data pushed in is displayed first
 	projectPanelData.push(new ProjectPanelData(
-		"2D Square Cannonade Desktop Game",
-		"September 2016 - Current",
-		"C++",
-		"Catch",
-		"SFML 2.4.0, Git",
-		NO_FUN_NOTE,
-		NO_BIGGEST_CHALLENGE,
-		NO_BIGGEST_REGRET,
-		IS_BIG_PROJECT,
-		NO_IMAGE_YET,
-		"https://github.com/aaronistheman/SFML-Square-Cannonade-Game/tree/develop"));
-	projectPanelData.push(new ProjectPanelData(
 		"RateMyLabPartners.com (fake website)",
-		"December 2016 - Current",
+		"December 2016, March 2017",
 		"JavaScript",
-		"(To be determined)",
+		NO_TEST_FRAMEWORK,
 		"MEAN framework (MongoDB/Mongoose, Express, AngularJS, Node.js)"
 			+ ", Bootstrap, HTML/CSS, Git",
 		NO_FUN_NOTE,
 		NO_BIGGEST_CHALLENGE,
 		NO_BIGGEST_REGRET,
 		IS_NOT_BIG_PROJECT,
-		NO_IMAGE_YET,
+		new ImageData("images/rate-my-lab-partner.JPG", 575, 318),
 		"https://github.com/aaronistheman/MEAN-RateMyLabPartners/tree/develop"));
 	projectPanelData.push(new ProjectPanelData(
 		"Personal Webpage (the one you're looking at)",
@@ -134,6 +124,21 @@ function getProjectPanelData()
 		IS_NOT_BIG_PROJECT,
 		new ImageData("images/personal-webpage.png", 683, 384),
 		"https://github.com/aaronistheman/aaronistheman.github.io/tree/develop"));
+	projectPanelData.push(new ProjectPanelData(
+		"2D Square Cannonade Desktop Game (unfinished)",
+		"September 2016 - December 2016",
+		"C++",
+		"Catch",
+		"SFML 2.4.0, Git",
+		"I was aware that the Boost library had an implementation of "
+			+ "the A* algorithm, but I wanted to code my own implementation "
+			+ " because I was curious about the process of doing so.",
+		"Implementing the A* algorithm. I faced some of the trickiest bugs "
+			+ "that I could ever recall facing.",
+		NO_BIGGEST_REGRET,
+		IS_BIG_PROJECT,
+		new ImageData("images/square-cannonade.JPG", 1209, 633),
+		"https://github.com/aaronistheman/SFML-Square-Cannonade-Game/tree/develop"));
 	projectPanelData.push(new ProjectPanelData(
 		"Simplified Economic Model",
 		"June - September 2016",
