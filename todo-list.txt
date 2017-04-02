@@ -1,10 +1,14 @@
 Next (in particular order)
 ----
 
--main panel
-	-removed LinkedIn link? (so I don't have to keep my LinkedIn updated?)
 -convert personal webpage into extended resume
--YouTube channel link?
+	-projects tab
+	-leadership tab
+	-group projects tab
+	-experience tab
+	-"other" tab
+	-YouTube channel link in separate ("Fun Stuff") tab with hosted
+	Game Show Fusion
 
 
 Considerable
@@ -45,19 +49,3 @@ web applications (Game Show Fusion, maybe Simplified Economic Model
 if I make it more robust); if it's just game(s), can call it "Arcade"
 -use CSS variables somehow (e.g. SASS, LESS)
 
-
-Webpage Angular Templates
--------------------------
-
--home.html
--education.html
--projects.html?
--leadership.html
--work.html
--development-process.html
-	-ideas on what to mention:
-		-test-driven development
-		-Git
-		-todo list
-		-small shell scripts
--page for noteworthy courses taken
