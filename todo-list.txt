@@ -1,8 +1,7 @@
 Next (in particular order)
 ----
 
--10/1 edits
-	-Google, work experience tab
+-reinstate navbar
 -convert personal webpage into extended resume
 	-projects tab
 	-leadership tab
