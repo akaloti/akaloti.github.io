@@ -34,11 +34,22 @@ body {
     background-color: #CBADA8;
 }
 
-#projects-label {
+/* This class has an awkward name so as to avoid
+    colliding with Boostrap's .panel-header */
+.heading-for-panel {
     border: 10px solid #4D423F;
     background-color: #CBADA8;
     padding-top: 5px;
     padding-bottom: 5px;
+    margin: 10px;
+}
+
+.panel-heading-background-override {
+    background-color: #CBADA8;
+}
+
+div.main-page-major-element.panel.panel-default > div.panel-body:first-child {
+    border-bottom: 5px solid #4D423F;
 }
 
 div.list-group .link {
@@ -48,6 +59,10 @@ div.list-group .link {
 
 div.list-group .link:hover {
     border-color: #F7F0F0;
+}
+
+div {
+    font-size: 16px;
 }
 
 a {

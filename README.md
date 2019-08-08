@@ -1,7 +1,5 @@
 # Personal Website
 
-(Last updated: 10/1/2017)
-
 About
 -----
 
@@ -22,11 +20,3 @@ http://www.w3schools.com/bootstrap/default.asp
 
 * Introductory MEAN tutorial (helped with AngularJS routing):
 https://thinkster.io/tutorials/mean-stack
-
-About the Author
-----------------
-
-* Name: Aaron Kaloti
-* Tagline: Third-year Computer Science student at UC Davis
-* Email address: aarons.7007@gmail.com
-* Webpage: https://aaronistheman.github.io/

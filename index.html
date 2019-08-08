@@ -56,12 +56,19 @@
 	<script type="text/ng-template" id="/home.html">
 		<div class="panel panel-default main-page-major-element">
 			<div class="panel-body">
+
+				<div class="row">
+					<div class="col-sm-12">
+						<h1 class="centered-text heading-for-panel">
+						About Me</h1>
+					</div>
+				</div>
 			
 				<!-- This panel has subpanels using the grid system -->
 				<div class="row">
 
 					<!-- Picture and name panel -->
-					<div class="col-sm-5 col-sm-offset-1
+					<div class="col-sm-7
 						panel panel-default" id="me-panel">
 						<div class="panel-body">
 							<!-- Image of Aaron Kaloti (me) -->
@@ -73,11 +80,14 @@
 
 							<div class="centered-text"><h4>Aaron Kaloti</h4></div>
 
-							<div class="centered-text"><b>Tagline:</b>
-							First-year Computer Science MS student at UC Davis.</div>
+							<div class="centered-text"><b>Current:</b>
+							Software Security Engineer, GPU Cloud Intern at NVIDIA in Santa Clara.</div>
+
+							<div class="centered-text"><b>Education:</b>
+							Finishing MS in Computer Science at UC Davis in June 2020.</div>
 
 							<div class="centered-text"><b>Objective:</b>
-							Seeking internship for summer of 2019.</div>
+							Seeking full-time position starting summer of 2020.</div>
 
 							<div class="centered-text"><b>Email:</b> aarons [dot]
 								7007 [at] gmail [dot] com</div>
@@ -85,10 +95,18 @@
 					</div>
 
 					<!-- Links panel -->
-					<div class="col-sm-4 col-sm-offset-1
+					<div class="col-sm-3 col-sm-offset-1
 						panel panel-default" id="links-panel">
 						<div class="panel-body">
 							<div class="list-group">
+								<!-- Resume link -->
+								<a href="documents/resume.pdf"
+									class="list-group-item link">
+									Resume
+									(Updated: 08/06/2019)
+								</a>
+								<br />
+
 								<!-- GitHub link -->
 								<a href="https://github.com/aaronistheman"
 									class="list-group-item link">
@@ -96,25 +114,29 @@
 								</a>
 								<br />
 
-								<!-- Resume link -->
-								<a href="documents/resume.pdf"
-									class="list-group-item link">
-									Resume
-									(Updated: 9/27/2018)
-								</a>
-								<!-- <br /> -->
-
 								<!-- LinkedIn link -->
-								<!-- <a href="https://www.linkedin.com/in/aaron-kaloti-943656107"
+								<a href="https://www.linkedin.com/in/aaron-kaloti"
 									class="list-group-item link">
 									LinkedIn
-								</a> -->
+								</a>
 							</div>
 						</div>
 					</div>
 
-					<!-- To create left margin for above panel -->
+					<!-- To create right margin for above panel -->
 					<div class="col-sm-0 col-sm-offset-1">
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Work experience -->
+		<div class="panel panel-default main-page-major-element">
+			<div class="panel-body">
+				<div class="row">
+					<div class="col-sm-12">
+						<h1 class="centered-text heading-for-panel">
+						Work Experience</h1>
 					</div>
 				</div>
 			</div>
@@ -122,10 +144,11 @@
 
 		<!-- Project previews -->
 		<div class="panel panel-default main-page-major-element">
-			<div id="project-previews" class="panel-body">
-				<h1 class="centered-text" id="projects-label">
-					Personal Projects</h1>
+			<div class="panel-body">
+				<h1 class="centered-text heading-for-panel">Personal Projects</h1>
+			</div>
 
+			<div id="project-previews" class="panel-body">
 				<div data-ng-repeat="ppd in projectPanelData"
 					class="panel panel-default project
 						{{ ppd.bigProjectStatus }}">
