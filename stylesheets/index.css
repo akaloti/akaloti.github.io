@@ -15,10 +15,10 @@ body {
     background-color: #1F1C1C;
 }
 
-/* For the wrap-around of the project preview panels */
-#project-previews {
+/* For the wrap-around of the panels that have the actual content */
+.scrolling-within-panel {
 	overflow: scroll;
-	height: 600px;
+	height: 500px;
 }
 
 /* For a project panel of a big project */
@@ -28,7 +28,7 @@ body {
 }
 */
 
-.panel.project, .panel#me-panel, .panel#links-panel,
+.panel.project, .panel.inner-panel, .panel#me-panel, .panel#links-panel,
     .panel.leadership-inner-panel {
     border: 10px solid #4D423F;
     background-color: #CBADA8;
@@ -57,7 +57,8 @@ div.list-group .link {
     background-color: #B79898;
 }
 
-div.list-group .link:hover {
+div.list-group .link:hover, div.panel:hover, .heading-for-panel:hover, div#me-panel:hover,
+    div#links-panel:hover  {
     border-color: #F7F0F0;
 }
 
@@ -71,4 +72,13 @@ a {
 
 img.project-panel-image {
     border: 1px solid black;
+}
+
+ul.inner-panel-content {
+    background-color: rgba(255,255,255,0.3);
+    border: 2px solid #4D423F;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 5px;
+    margin-top: 10px;
 }

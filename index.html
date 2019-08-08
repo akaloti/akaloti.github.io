@@ -28,13 +28,14 @@
 <body data-ng-app="personalWebpage" data-ng-cloak>
 <div class="container">
 
-	<!-- <nav class="navbar navbar-default main-page-major-element">
-		<div class="container">
+	<nav class="navbar navbar-default main-page-major-element">
+		<div class="container-fluid">
 			<div class="navbar-header">
+      			<a class="navbar-brand" href="#/home#about-me-panel">About Me</a>
 
 				<button type="button" class="navbar-toggle"
 					data-toggle="collapse" data-target="#my-navbar">
-					<!-- The bars in the button's icon --><!--
+					<!-- The bars in the button's icon -->
 			        <span class="icon-bar"></span>
 			        <span class="icon-bar"></span>
 			        <span class="icon-bar"></span>
@@ -43,32 +44,29 @@
 			</div>
 			<div class="collapse navbar-collapse" id="my-navbar">
 				<ul class="nav navbar-nav" id="navbar-unordered-list">
-					<li id="navbar-home"><a href="#/home">Home</a></li>
-					<li id="navbar-leadership">
-						<a href="#/leadership">Leadership</a></li>
+					<li><a href="#/home#work-experience-panel">Experience</a></li>
+					<li><a href="#/home#projects-panel">Personal Projects</a></li>
+					<li><a href="#/home#class-projects-panel">Group Projects</a></li>
+					<li><a href="#/home#research-panel">Research</a></li>
 				</ul>
 			</div>
 		</div>
-	</nav> -->
+	</nav>
 
 	<ui-view></ui-view>
 
 	<script type="text/ng-template" id="/home.html">
-		<div class="panel panel-default main-page-major-element">
+		<div id="about-me-panel" class="panel panel-default main-page-major-element">
 			<div class="panel-body">
-
-				<div class="row">
-					<div class="col-sm-12">
-						<h1 class="centered-text heading-for-panel">
-						About Me</h1>
-					</div>
-				</div>
-			
+				<h1 class="centered-text heading-for-panel">
+				About Me</h1>
+			</div>
+			<div class="panel-body">
 				<!-- This panel has subpanels using the grid system -->
 				<div class="row">
 
 					<!-- Picture and name panel -->
-					<div class="col-sm-7
+					<div class="col-sm-6 col-sm-offset-1
 						panel panel-default" id="me-panel">
 						<div class="panel-body">
 							<!-- Image of Aaron Kaloti (me) -->
@@ -78,16 +76,16 @@
 								alt="Picture of Aaron Kaloti"
 								height="100" width="100" />
 
-							<div class="centered-text"><h4>Aaron Kaloti</h4></div>
+							<div class="centered-text"><h3><b>Aaron Kaloti</b></h3></div>
 
 							<div class="centered-text"><b>Current:</b>
-							Software Security Engineer, GPU Cloud Intern at NVIDIA in Santa Clara.</div>
+							Software Security Engineer, GPU Cloud Intern at NVIDIA</div>
 
 							<div class="centered-text"><b>Education:</b>
-							Finishing MS in Computer Science at UC Davis in June 2020.</div>
+							MS in Computer Science at UC Davis by June 2020</div>
 
 							<div class="centered-text"><b>Objective:</b>
-							Seeking full-time position starting summer of 2020.</div>
+							Seeking full-time position</div>
 
 							<div class="centered-text"><b>Email:</b> aarons [dot]
 								7007 [at] gmail [dot] com</div>
@@ -131,24 +129,89 @@
 		</div>
 
 		<!-- Work experience -->
-		<div class="panel panel-default main-page-major-element">
+		<div id="work-experience-panel" class="panel panel-default main-page-major-element">
 			<div class="panel-body">
-				<div class="row">
-					<div class="col-sm-12">
-						<h1 class="centered-text heading-for-panel">
-						Work Experience</h1>
+				<h1 class="centered-text heading-for-panel">
+				Work Experience</h1>
+			</div>
+
+			<div class="scrolling-within-panel panel-body">
+				<div class="panel panel-default inner-panel">
+					<div class="panel-body">
+						<div class="row">
+							<div class="col-sm-9">
+								<b>Role: <i>Software Security Engineer, GPU Cloud Intern</i></b> at <b>NVIDIA</b>
+								<br />
+								<b>When:</b> June 2019 - Current (until September 2019)
+								<br />
+								<ul class="inner-panel-content">
+									<li>Implementing a security monitor for a data center and associated jump server.</li>
+									<li>Using osquery, Bash scripts, Graylog (extractors, dashboards), and rsyslog.</li>
+									<li>The monitor checks file integrity, logins/logouts, ingoing/outgoing network connections, and will report noteworthy activity on Graylog dashboards and generate alerts when appropriate.</li>
+								</ul>
+							</div>
+							<div class="col-sm-3">
+								<img src="images/nvidia-logo.jpg"
+									class="img-responsive centered-element"
+									alt="NVIDIA Logo" />
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="panel panel-default inner-panel">
+					<div class="panel-body">
+						<div class="row">
+							<div class="col-sm-9">
+								<b>Role: <i>Software Engineering, Tools and Infrastructure Intern</i></b> at <b>Google</b>
+								<br />
+								<b>When:</b> June - September 2017
+								<br />
+								<ul class="inner-panel-content">
+									<li>Implemented an A/B test framework to flag code changes that would crash or significantly alter the output of a pipeline of client advertisement information received by a policy review decisions system.</li>
+									<li>Used C++ and cluster management tools, as well as database, protocol buffer, client/server, RPC, and publisher/subscriber APIs.</li>
+								</ul>
+							</div>
+							<div class="col-sm-3">
+								<img src="images/google-logo.jpg"
+									class="img-responsive centered-element"
+									alt="Google Logo"
+									height="450" width="300" />
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="panel panel-default inner-panel">
+					<div class="panel-body">
+						<div class="row">
+							<div class="col-sm-9">
+								<b>Role: <i>IT Assistant</i></b> at <b>ASUCD Unitrans</b>
+								<br />
+								<b>When:</b> June - September 2016
+								<br />
+								<ul class="inner-panel-content">
+									<li>Worked on website with Python, Django, and JavaScript.</li>
+									<li>Performed a few minor bug fixes and improvements throughout the website used by shift managers to assign shifts to bus drivers and manage employee data. Wrote additional unit tests.</li>
+								</ul>
+							</div>
+							<div class="col-sm-3">
+								<img src="images/asucd-unitrans-logo.jpeg"
+									class="img-responsive centered-element"
+									alt="ASUCD Unitrans Logo"
+									height="300" width="300" />
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
-		</div>
+		</div> <!-- Work experience -->
 
 		<!-- Project previews -->
-		<div class="panel panel-default main-page-major-element">
+		<div id="projects-panel" class="panel panel-default main-page-major-element">
 			<div class="panel-body">
-				<h1 class="centered-text heading-for-panel">Personal Projects</h1>
+				<h1 class="centered-text heading-for-panel">13 Personal Projects</h1>
 			</div>
 
-			<div id="project-previews" class="panel-body">
+			<div class="scrolling-within-panel panel-body">
 				<div data-ng-repeat="ppd in projectPanelData"
 					class="panel panel-default project
 						{{ ppd.bigProjectStatus }}">
@@ -201,68 +264,108 @@
 				</div>
 				</div>
 			</div>
-		</div>
+		</div> <!-- Project previews -->
+
+		<!-- Class projects -->
+		<div id="class-projects-panel" class="panel panel-default main-page-major-element">
+			<div class="panel-body">
+				<h1 class="centered-text heading-for-panel">
+				Group Projects</h1>
+			</div>
+
+			<div class="scrolling-within-panel panel-body">
+				<div class="panel panel-default inner-panel">
+					<div class="panel-body">
+						<b>Project: <u><i>Anomaly-Based Network Intrusion Detection System</i></u></b>
+						<br />
+						<b>When:</b> May 2019
+						<br />
+						<b>Team Size:</b> 3
+						<ul class="inner-panel-content">
+							<li>Implemented basic network anomaly-based IDS to classify network traffic (read from pcap files) as anomalous or typical.</li>
+							<li>Can classify behavior either by packet or by sliding window (clumps) of packets.
+							<li>Used Python, scapy, scikit, and JSON.</li>
+						</ul>
+					</div>
+				</div>
+				<div class="panel panel-default inner-panel">
+					<div class="panel-body">
+						<b>Project: <u><i>Peer-to-Peer Distributed File System</i></u></b>
+						<br />
+						<b>When:</b> January - March 2019
+						<br />
+						<b>Team Size:</b> 3
+						<ul class="inner-panel-content">
+							<li>Implemented basic peer-to-peer distributed file system using Python and Docker.</li>
+							<li>Helped implement the Chord distributed lookup protocol for load balancing and basic fault tolerance.</li>
+							<li>Experimented with Raft consensus algorithm to support conflicting writes and improve fault tolerance.</li>
+						</ul>
+					</div>
+				</div>
+				<div class="panel panel-default inner-panel">
+					<div class="panel-body">
+						<b>Project: <u><i>Website for Fictional Warcraft Desktop Game</i></u></b>
+						<br />
+						<b>When:</b> January - March 2017
+						<br />
+						<b>Team Size:</b> 8
+						<ul class="inner-panel-content">
+							<li>Implemented website to manage user profiles, game scores/data, forums, and game maps.</li>
+							<li>Coordinated with several other groups (working on different aspects of the fictional Warcraft desktop game).</li>
+							<li>Used Python, Django, JavaScript, HTML/CSS, and Git for full-stack web development.</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div> <!-- class projects -->
+
+		<!-- research -->
+		<div id="research-panel" class="panel panel-default main-page-major-element">
+			<div class="panel-body">
+				<h1 class="centered-text heading-for-panel">
+				Research Projects (at UC Davis)</h1>
+			</div>
+
+			<div class="scrolling-within-panel panel-body">
+				<div class="panel panel-default inner-panel">
+					<div class="panel-body">
+						<b>Project: <u><i>Effect of IP Address Anonymization on the Bro Intrusion Detection System</i></u></b>
+						<br />
+						<b>When:</b> Fall 2018
+						<ul class="inner-panel-content">
+							<li>On each of selected pcap files, compared the analysis of the Bro IDS on the original pcap file, the black-marker anonymized one (created with tcpurify), and the prefix-preserving anonymized one (created with ipsumdump).</li>
+							<li>Wrote Python scripts to help analyze the results.</li>
+						</ul>
+					</div>
+				</div>
+				<div class="panel panel-default inner-panel">
+					<div class="panel-body">
+						<b>Project: <u><i>Applied Persian digit classification approach to English digits.</i></u></b>
+						<br />
+						<b>When:</b> August 2018
+						<ul class="inner-panel-content">
+							<li>Extended a published Persian digit classification approach to improve its classification of English digits. The original approach formed the feature vector after breaking the image (of the digit) into two horizontal boxes and one vertical box. I modified this approach to make the number of horizontal and vertical boxes into parameters and sought the optimal parameters.</li>
+							<li>Used one-vs-all logistic regression for classification.</li>
+							<li>Tested on MNIST digits data set.</li>
+							<li>Source code: <a href="https://github.com/matloff/imagefraud/blob/second-set/digitRecognition/secondSet.R">here</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="panel panel-default inner-panel">
+					<div class="panel-body">
+						<b>Project: <u><i>Small R Debugger</i></u></b>
+						<br />
+						<b>When:</b> October 2017 - March 2018
+						<ul class="inner-panel-content">
+							<li>Contributed features and improvements to a small R debugger.</li>
+							<li>First translated the debugger from Python to R, then improved the usability of the tool and researched ways to make the tool more friendly/approachable to beginners.</li>
+							<li>Source code: <a href="https://github.com/matloff/debugR">here</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div> <!-- research -->
 	</script> <!-- template: home.html -->
-
-	<script type="text/ng-template" id="/leadership.html">
-		<div class="panel panel-default leadership-panel">
-		<div class="panel-body">
-			<div class="panel panel-default leadership-inner-panel">
-			<div class="panel-body">
-				<h4><b>Review Session Host</b>, October 2016 - Present</h4>
-				<p>As part of the UC Davis Computer Science Tutoring Club, I help with free review sessions for computer science courses.</p>
-
-				<p><b>Number of sessions hosted:</b> 17 (including 6 as co-host)</p>
-				<p><b>Average session length:</b> about 1.93 hours</p>
-				<p><b>Approximate audience sizes</b> range from 15 to 90 people, with average of 40.</p>
-
-				<br />
-				<p>A "timeline" of sessions I helped with is shown below:</p>
-				<ul>
-					<li>Spring Quarter 2017 (4 sessions, including 3 as co-host):
-					<ul>
-						<li>ECS 122A, Algorithm Design (x1, as co-host)</li>
-						<li>ECS 60, Data Structures and Algorithms (x2, both as co-host)</li>
-						<li>ECS 40, Object-Oriented Programming (C++) (x1)</li>
-					</ul>
-					</li>
-				
-					<li>Winter Quarter 2017 (5 sessions, including 1 as co-host):
-					<ul>
-						<li>ECS 122A, Algorithm Design (x1)</li>
-						<li>ECS 40, Object-Oriented Programming (C++) (x1)</li>
-						<li>ECS 10, Introduction to Programming (Python) (x3, 1 as co-host)</li>
-					</ul>
-					</li>
-
-					<li>Fall Quarter 2016 (8 sessions, including 2 as co-host):
-					<ul>
-						<li>ECS 122A, Algorithm Design (x2)</li>
-						<li>ECS 60, Data Structures and Algorithms (x2)</li>
-						<li>ECS 50, CUSP Assembly Language (x2)</li>
-						<li>ECS 10, Introduction to Programming (Python) (x2, both as co-host)</li>
-					</ul>
-					</li>
-				</ul>
-			</div>
-			</div>
-			<div class="panel panel-default leadership-inner-panel">
-			<div class="panel-body">
-				<h4><b>President</b>, Robot Programming Committee, Vanden High School, June 2014 - June 2015</h4>
-				<ul>
-					<li>Got <b>7</b> programmers started on either C++ or Java</li>
-					<li>Promoted use of Git branches</li>
-				</ul>
-			</div>
-			</div>
-		</div>
-		</div>
-	</script> <!-- template: leadership.html -->
-
-	<script type="text/ng-template" id="/development-process.html">
-		<p>development-process.html</p>
-	</script> <!-- template: development-process.html -->
-
 </div>
 </body>
 </html>
