@@ -6,6 +6,7 @@
 
 ## Considerable Ideas
 
+- use code HTML tags appropriately
 - provide link to Game Show Fusion
 - way to count number of visits/clicks?
 - easier way to update resume?
