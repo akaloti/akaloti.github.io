@@ -111,7 +111,7 @@ function getProjectPanelData()
 		NO_BIGGEST_REGRET,
 		IS_NOT_BIG_PROJECT,
 		new ImageData("images/rate-my-lab-partner.JPG", 575, 318),
-		"https://github.com/aaronistheman/MEAN-RateMyLabPartners/tree/develop"));
+		"https://github.com/akaloti/MEAN-RateMyLabPartners/tree/develop"));
 	projectPanelData.push(new ProjectPanelData(
 		"Personal Webpage (the one you're looking at)",
 		"December 2016",
@@ -123,7 +123,7 @@ function getProjectPanelData()
 		"Not using a CSS variable framework.",
 		IS_NOT_BIG_PROJECT,
 		new ImageData("images/personal-webpage.png", 683, 384),
-		"https://github.com/aaronistheman/aaronistheman.github.io/tree/develop"));
+		"https://github.com/akaloti/akaloti.github.io/tree/develop"));
 	projectPanelData.push(new ProjectPanelData(
 		"2D Square Cannonade Desktop Game (unfinished)",
 		"September 2016 - December 2016",
@@ -138,7 +138,7 @@ function getProjectPanelData()
 		NO_BIGGEST_REGRET,
 		IS_BIG_PROJECT,
 		new ImageData("images/square-cannonade.JPG", 1209, 633),
-		"https://github.com/aaronistheman/SFML-Square-Cannonade-Game/tree/develop"));
+		"https://github.com/akaloti/SFML-Square-Cannonade-Game/tree/develop"));
 	projectPanelData.push(new ProjectPanelData(
 		"Simplified Economic Model",
 		"June - September 2016",
@@ -150,7 +150,7 @@ function getProjectPanelData()
 		NO_BIGGEST_REGRET,
 		IS_BIG_PROJECT,
 		new ImageData("images/economics.png", 443, 317),
-		"https://github.com/aaronistheman/Supply-Demand-Graph-Calculations"));
+		"https://github.com/akaloti/Supply-Demand-Graph-Calculations"));
 	projectPanelData.push(new ProjectPanelData(
 		"Shift/Runs Interface Project",
 		"April - May 2016",
@@ -179,7 +179,7 @@ function getProjectPanelData()
 			+ "game too luck-dependent, in my opinion.",
 		IS_BIG_PROJECT,
 		new ImageData("images/outer-space-legion.png", 180, 320),
-		"https://github.com/aaronistheman/Android-Spacecraft-Game"));
+		"https://github.com/akaloti/Android-Spacecraft-Game"));
 	projectPanelData.push(new ProjectPanelData(
 		"State Capital Quiz Android App",
 		"December 2015",
@@ -191,7 +191,7 @@ function getProjectPanelData()
 		NO_BIGGEST_REGRET,
 		IS_NOT_BIG_PROJECT,
 		new ImageData("images/state-capitals-quiz.png", 683, 384),
-		"https://github.com/aaronistheman/Android-State-Capitals-App"));
+		"https://github.com/akaloti/Android-State-Capitals-App"));
 	projectPanelData.push(new ProjectPanelData(
 		"Chat Web Application",
 		"December 2015",
@@ -203,7 +203,7 @@ function getProjectPanelData()
 		NO_BIGGEST_REGRET,
 		IS_NOT_BIG_PROJECT,
 		new ImageData("images/trivial-chat.jpg", 548, 308),
-		"https://github.com/aaronistheman/PHP-Trivial-Chat-Web-Application"));
+		"https://github.com/akaloti/PHP-Trivial-Chat-Web-Application"));
 	projectPanelData.push(new ProjectPanelData(
 		"Game Show Web Game",
 		"September - November 2015",
@@ -218,7 +218,7 @@ function getProjectPanelData()
 			+ " reusing certain JavaScript custom types that I wrote.",
 		IS_BIG_PROJECT,
 		new ImageData("images/game-show-fusion.png", 683, 384),
-		"https://github.com/aaronistheman/Deal-or-Smarter-Than-a-Millionaire-SpongeBob-Edition"));
+		"https://github.com/akaloti/Deal-or-Smarter-Than-a-Millionaire-SpongeBob-Edition"));
 	projectPanelData.push(new ProjectPanelData(
 		"BS Card Web Game",
 		"August - September 2015",
@@ -230,7 +230,7 @@ function getProjectPanelData()
 		"Designing the project in a multiplayer-unfriendly way.",
 		IS_NOT_BIG_PROJECT,
 		new ImageData("images/bs.jpg", 640, 360),
-		"https://github.com/aaronistheman/BS-Card-Web-Game"));
+		"https://github.com/akaloti/BS-Card-Web-Game"));
 	projectPanelData.push(new ProjectPanelData(
 		"Tanks Desktop Game",
 		"July - August 2014",
@@ -244,7 +244,7 @@ function getProjectPanelData()
 		NO_BIGGEST_REGRET,
 		IS_BIG_PROJECT,
 		new ImageData("images/tanks.JPG", 541, 304),
-		"https://github.com/aaronistheman/Tanks"));
+		"https://github.com/akaloti/Tanks"));
 	projectPanelData.push(new ProjectPanelData(
 		"Tic Tac Toe with GUI",
 		"April 2014",
@@ -257,7 +257,7 @@ function getProjectPanelData()
 		NO_BIGGEST_REGRET,
 		IS_NOT_BIG_PROJECT,
 		new ImageData("images/tic-tac-toe.JPG", 658, 318),
-		"https://github.com/aaronistheman/Tic-Tac-Toe-with-GUI"));
+		"https://github.com/akaloti/Tic-Tac-Toe-with-GUI"));
 	projectPanelData.push(new ProjectPanelData(
 		"Checkers with GUI",
 		"Summer of 2013",
@@ -269,7 +269,7 @@ function getProjectPanelData()
 		NO_BIGGEST_REGRET,
 		IS_BIG_PROJECT,
 		new ImageData("images/checkers.jpg", 612, 408),
-		"https://github.com/aaronistheman/Checkers-with-GUI"));
+		"https://github.com/akaloti/Checkers-with-GUI"));
 
 	return projectPanelData;
 }
