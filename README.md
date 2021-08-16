@@ -3,7 +3,9 @@
 About
 -----
 
-This is my personal webpage. I aimed for a single-page application with AngularJS routing and a responsive webpage with Bootstrap. See the webpage live here: https://akaloti.github.io/
+This is my personal webpage. I aimed for a single-page application with AngularJS routing and a responsive webpage with Bootstrap.
+
+See the webpage live here: https://akaloti.github.io/
 
 How to Run
 ----------
